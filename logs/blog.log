@@ -1,0 +1,1203 @@
+2019/08/02 09:03:37.658 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 09:03:50.759 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|     80.723µs|   match|[97;44m GET     [0m /     r:/
+2019/08/02 09:03:51.010 [D] [server.go:2774]  |            ::1|[97;43m 404 [0m|    321.265µs| nomatch|[97;44m GET     [0m /favicon.ico
+2019/08/02 09:20:59.089 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 09:21:17.675 [D] [server.go:2774]  |            ::1|[97;43m 404 [0m|    254.564µs| nomatch|[97;44m GET     [0m /api/v1/category/getall
+2019/08/02 09:21:41.880 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 09:21:59.267 [C] [panic.go:522]  the request url is  /api/v1/category/getall
+2019/08/02 09:21:59.267 [C] [panic.go:522]  Handler crashed with error <Ormer> table: `.` not found, make sure it was registered with `RegisterModel()`
+2019/08/02 09:21:59.267 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/02 09:21:59.267 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm.go:114
+2019/08/02 09:21:59.267 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm.go:128
+2019/08/02 09:21:59.267 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/category.go:23
+2019/08/02 09:21:59.267 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/02 09:21:59.267 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/02 09:21:59.267 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/02 09:21:59.267 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/02 09:21:59.267 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/02 09:21:59.267 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/02 09:21:59.268 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/02 09:23:13.575 [C] [panic.go:522]  the request url is  /api/v1/category/getall
+2019/08/02 09:23:13.575 [C] [panic.go:522]  Handler crashed with error <Ormer> table: `.` not found, make sure it was registered with `RegisterModel()`
+2019/08/02 09:23:13.575 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/02 09:23:13.575 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm.go:114
+2019/08/02 09:23:13.575 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm.go:128
+2019/08/02 09:23:13.575 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/category.go:23
+2019/08/02 09:23:13.575 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/02 09:23:13.575 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/02 09:23:13.575 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/02 09:23:13.575 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/02 09:23:13.575 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/02 09:23:13.575 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/02 09:23:13.576 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/02 09:23:19.713 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 09:23:25.212 [C] [panic.go:522]  the request url is  /api/v1/category/getall
+2019/08/02 09:23:25.212 [C] [panic.go:522]  Handler crashed with error <Ormer> table: `.` not found, make sure it was registered with `RegisterModel()`
+2019/08/02 09:23:25.212 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/02 09:23:25.212 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm.go:114
+2019/08/02 09:23:25.212 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm.go:128
+2019/08/02 09:23:25.212 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/category.go:23
+2019/08/02 09:23:25.212 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/02 09:23:25.212 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/02 09:23:25.212 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/02 09:23:25.212 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/02 09:23:25.212 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/02 09:23:25.212 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/02 09:23:25.213 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/02 09:23:27.288 [C] [panic.go:522]  the request url is  /api/v1/category/getall
+2019/08/02 09:23:27.288 [C] [panic.go:522]  Handler crashed with error <Ormer> table: `.` not found, make sure it was registered with `RegisterModel()`
+2019/08/02 09:23:27.288 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/02 09:23:27.288 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm.go:114
+2019/08/02 09:23:27.288 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm.go:128
+2019/08/02 09:23:27.288 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/category.go:23
+2019/08/02 09:23:27.288 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/02 09:23:27.288 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/02 09:23:27.288 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/02 09:23:27.288 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/02 09:23:27.288 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/02 09:23:27.288 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/02 09:23:27.288 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/02 09:23:50.117 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 09:24:50.544 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 09:27:47.694 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 09:32:33.038 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 09:33:24.327 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    298.372µs| nomatch|[97;46m POST    [0m /api/v1/category/add
+2019/08/02 09:33:39.922 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 09:33:42.806 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  86.666158ms|   match|[97;46m POST    [0m /api/v1/category/add   r:/api/v1/category/add
+2019/08/02 09:34:02.188 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   18.78401ms|   match|[97;46m POST    [0m /api/v1/category/add   r:/api/v1/category/add
+2019/08/02 09:34:11.093 [C] [panic.go:522]  the request url is  /api/v1/category/getall
+2019/08/02 09:34:11.093 [C] [panic.go:522]  Handler crashed with error <Ormer> table: `.` not found, make sure it was registered with `RegisterModel()`
+2019/08/02 09:34:11.093 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/02 09:34:11.093 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm.go:114
+2019/08/02 09:34:11.093 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm.go:128
+2019/08/02 09:34:11.093 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/category.go:23
+2019/08/02 09:34:11.093 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/02 09:34:11.093 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/02 09:34:11.093 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/02 09:34:11.093 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/02 09:34:11.093 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/02 09:34:11.093 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/02 09:34:11.094 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/02 09:36:03.590 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 09:36:07.560 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  22.062128ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/02 09:37:06.796 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    282.797µs| nomatch|[97;46m POST    [0m /api/v1/category/getall
+2019/08/02 09:37:13.856 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  33.009528ms|   match|[97;46m POST    [0m /api/v1/category/add   r:/api/v1/category/add
+2019/08/02 09:37:23.531 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    10.8109ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/02 10:58:16.535 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 10:58:25.361 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|     77.527µs|   match|[97;44m GET     [0m /     r:/
+2019/08/02 10:58:39.464 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    124.819µs|   match|[97;44m GET     [0m /static/images/d.jpg
+2019/08/02 11:41:21.228 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:21:32.029 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:21:47.419 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  27.477268ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/02 13:22:18.834 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  45.121579ms|   match|[97;46m POST    [0m /api/v1/category/add   r:/api/v1/category/add
+2019/08/02 13:22:48.343 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    263.694µs| nomatch|[97;44m GET     [0m /api/v1/category/delete/4
+2019/08/02 13:23:05.132 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:23:12.142 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  29.398263ms|   match|[97;44m GET     [0m /api/v1/category/delete/a   r:/api/v1/category/delete/:id
+2019/08/02 13:23:15.791 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  10.209839ms|   match|[97;44m GET     [0m /api/v1/category/delete/0   r:/api/v1/category/delete/:id
+2019/08/02 13:23:20.108 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  24.415931ms|   match|[97;44m GET     [0m /api/v1/category/delete/-1   r:/api/v1/category/delete/:id
+2019/08/02 13:23:37.487 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  58.642491ms|   match|[97;44m GET     [0m /api/v1/category/delete/4   r:/api/v1/category/delete/:id
+2019/08/02 13:23:46.357 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   21.37795ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/02 13:25:55.192 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:26:00.023 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|     232.65µs| nomatch|[97;44m GET     [0m /api/v1/category/get/1
+2019/08/02 13:26:02.102 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    188.457µs| nomatch|[97;44m GET     [0m /api/v1/category/get/1
+2019/08/02 13:26:10.465 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:26:14.086 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    213.303µs| nomatch|[97;44m GET     [0m /api/v1/category/get/1
+2019/08/02 13:26:24.102 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:26:24.547 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    272.651µs| nomatch|[97;44m GET     [0m /api/v1/category/get/1
+2019/08/02 13:26:34.455 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:26:37.514 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:26:39.226 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  58.964745ms|   match|[97;44m GET     [0m /api/v1/category/get/1   r:/api/v1/category/get/:id
+2019/08/02 13:26:42.885 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.582537ms|   match|[97;44m GET     [0m /api/v1/category/get/2   r:/api/v1/category/get/:id
+2019/08/02 13:26:45.892 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  53.035811ms|   match|[97;44m GET     [0m /api/v1/category/get/3   r:/api/v1/category/get/:id
+2019/08/02 13:26:47.756 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   18.20631ms|   match|[97;44m GET     [0m /api/v1/category/get/5   r:/api/v1/category/get/:id
+2019/08/02 13:26:50.730 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  16.463734ms|   match|[97;44m GET     [0m /api/v1/category/get/9   r:/api/v1/category/get/:id
+2019/08/02 13:27:09.974 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  15.853871ms|   match|[97;44m GET     [0m /api/v1/category/get/a   r:/api/v1/category/get/:id
+2019/08/02 13:27:15.457 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  17.401791ms|   match|[97;44m GET     [0m /api/v1/category/get/-1   r:/api/v1/category/get/:id
+2019/08/02 13:31:37.416 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:32:05.682 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:35:42.674 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:35:49.264 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    385.915µs| nomatch|[97;46m POST    [0m /api/v1/category/get/a
+2019/08/02 13:35:55.071 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  30.008357ms|   match|[97;44m GET     [0m /api/v1/category/get/a   r:/api/v1/category/get/:id
+2019/08/02 13:35:58.469 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  22.049549ms|   match|[97;44m GET     [0m /api/v1/category/get/88   r:/api/v1/category/get/:id
+2019/08/02 13:36:35.344 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:37:15.612 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 13:37:23.758 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  44.130844ms|   match|[97;44m GET     [0m /api/v1/category/get/88   r:/api/v1/category/get/:id
+2019/08/02 13:37:35.862 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  44.133539ms|   match|[97;46m POST    [0m /api/v1/category/update   r:/api/v1/category/update
+2019/08/02 13:37:47.750 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   27.98812ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/02 13:38:04.447 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  32.531584ms|   match|[97;46m POST    [0m /api/v1/category/update   r:/api/v1/category/update
+2019/08/02 14:07:45.607 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 14:07:58.281 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    489.391µs| nomatch|[97;46m POST    [0m /api/v1/user/register
+2019/08/02 14:08:23.974 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    323.802µs| nomatch|[97;46m POST    [0m /api/v1/user/registe
+2019/08/02 14:09:00.006 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 14:09:03.506 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    269.799µs| nomatch|[97;46m POST    [0m /api/v1/user/registe
+2019/08/02 14:09:21.657 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 14:09:25.372 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    155.445µs|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 14:20:19.548 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 14:30:10.208 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 14:46:09.238 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 14:46:50.986 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|      274.4µs| nomatch|[97;44m GET     [0m /api/v1/user/registe
+2019/08/02 14:47:08.372 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 14:47:12.890 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  32.428454ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 14:49:57.426 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 14:50:32.672 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 111.594679ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 14:51:15.998 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 14:51:26.073 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 14:51:32.156 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 347.145211ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 15:00:15.024 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 15:05:27.207 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 15:05:41.095 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 129.576148ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 15:05:54.639 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 185.939127ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 15:08:05.897 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 15:16:00.968 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 15:16:10.131 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  149.46191ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 15:16:14.654 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 190.559706ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 15:16:28.595 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    379.807ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 15:17:10.723 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 15:41:42.538 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 15:42:05.837 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    249.616µs| nomatch|[97;46m POST    [0m /api/v1/user/login
+2019/08/02 15:42:18.655 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 15:42:22.572 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 127.147429ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 15:47:15.315 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 15:47:18.580 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 211.227442ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 15:47:21.598 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  72.256362ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 15:52:53.978 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 15:54:19.329 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 15:54:47.901 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 123.305751ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 15:54:54.331 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 111.949223ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 15:55:23.406 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  51.957904ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 15:55:28.851 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  12.327286ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 15:55:35.191 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  13.226496ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 15:56:54.125 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 15:56:57.191 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  35.036778ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:10:56.708 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 16:11:00.603 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  28.694539ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:11:09.130 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  14.020188ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:11:14.067 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  66.799044ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:12:11.980 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  37.986803ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 16:12:16.575 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  53.187563ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 16:12:21.503 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  19.339936ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 16:12:24.544 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  48.458151ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 16:12:28.393 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  13.796631ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 16:12:29.245 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  19.775801ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 16:12:39.621 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  46.131361ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:14:13.318 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 16:14:16.497 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 133.530681ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:14:18.651 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  14.295541ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:14:19.531 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   15.85276ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:14:38.418 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 16:14:41.121 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  29.384848ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:16:23.890 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 16:16:31.903 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 16:16:34.819 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 120.524811ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:16:39.158 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 109.244642ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:16:46.955 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 16:16:49.280 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 143.393377ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:16:50.610 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  164.56278ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:18:16.557 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 16:18:21.789 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 118.951255ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:18:26.699 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 112.962726ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:18:32.573 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 113.510473ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:18:38.456 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 104.291155ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:18:56.613 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  163.98344ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/02 16:19:03.272 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 114.906302ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:19:43.452 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 16:20:57.706 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 16:21:37.125 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    252.583µs| nomatch|[97;46m POST    [0m /api/v1/user/update
+2019/08/02 16:21:47.158 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 16:21:50.070 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 292.528167ms|   match|[97;46m POST    [0m /api/v1/user/update   r:/api/v1/user/update
+2019/08/02 16:22:03.680 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 212.994155ms|   match|[97;46m POST    [0m /api/v1/user/update   r:/api/v1/user/update
+2019/08/02 16:22:07.686 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 229.415725ms|   match|[97;46m POST    [0m /api/v1/user/update   r:/api/v1/user/update
+2019/08/02 16:22:15.254 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 120.948818ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:22:21.275 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 125.680883ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:22:27.732 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 119.367861ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:22:54.238 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 108.009443ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:23:33.854 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 16:23:38.362 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 258.991706ms|   match|[97;46m POST    [0m /api/v1/user/update   r:/api/v1/user/update
+2019/08/02 16:24:01.194 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 152.518178ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:24:46.554 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 16:24:53.763 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  280.77532ms|   match|[97;46m POST    [0m /api/v1/user/update   r:/api/v1/user/update
+2019/08/02 16:24:57.951 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  143.28878ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 16:25:04.272 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 146.096874ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/02 17:29:47.696 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 17:30:08.421 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    595.585µs| nomatch|[97;46m POST    [0m /api/v1/article/add
+2019/08/02 17:30:21.121 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 17:31:18.422 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    549.661µs|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/02 17:32:36.907 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    162.718µs|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/02 18:19:50.096 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 18:20:37.623 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 18:20:48.532 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|     81.025µs|   match|[97;44m GET     [0m /     r:/
+2019/08/02 18:20:52.037 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    126.089µs|   match|[97;44m GET     [0m /swagger/
+2019/08/02 18:20:52.069 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    185.344µs|   match|[97;44m GET     [0m /swagger/swagger-ui.css
+2019/08/02 18:20:52.087 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   13.54815ms|   match|[97;44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/08/02 18:20:52.095 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  16.101314ms|   match|[97;44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/08/02 18:20:52.470 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    161.187µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/02 18:26:27.312 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 18:26:33.541 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|     76.942µs|   match|[97;44m GET     [0m /     r:/
+2019/08/02 18:26:33.789 [D] [server.go:2774]  |            ::1|[97;43m 404 [0m|    618.515µs| nomatch|[97;44m GET     [0m /favicon.ico
+2019/08/02 18:26:36.227 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    104.567µs|   match|[97;44m GET     [0m /swagger/
+2019/08/02 18:26:36.256 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|     95.821µs|   match|[97;44m GET     [0m /swagger/swagger-ui.css
+2019/08/02 18:26:36.274 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|   10.12154ms|   match|[97;44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/08/02 18:26:36.274 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|  10.182581ms|   match|[97;44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/08/02 18:26:36.598 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    212.189µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/02 20:58:55.455 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 20:58:59.481 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    168.924µs|   match|[97;44m GET     [0m /swagger/
+2019/08/02 20:58:59.576 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|     98.331µs|   match|[97;44m GET     [0m /swagger/swagger-ui.css
+2019/08/02 20:58:59.591 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|   8.691762ms|   match|[97;44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/08/02 20:58:59.593 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|   4.450511ms|   match|[97;44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/08/02 20:59:00.013 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    485.419µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/02 20:59:27.800 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 20:59:28.406 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    349.058µs|   match|[97;44m GET     [0m /swagger/
+2019/08/02 20:59:28.817 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    203.784µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/02 20:59:28.856 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|     93.881µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/02 20:59:44.716 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 20:59:50.774 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    248.648µs|   match|[97;44m GET     [0m /swagger/
+2019/08/02 20:59:51.003 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    164.009µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/02 20:59:51.039 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    378.102µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/02 21:01:03.324 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 21:01:47.285 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|     111.52µs|   match|[97;44m GET     [0m /swagger/
+2019/08/02 21:01:47.582 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    178.024µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/02 21:01:47.631 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    123.823µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/02 21:01:49.169 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 21:03:37.292 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 21:04:55.316 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 21:06:40.791 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 21:07:27.465 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 21:08:11.193 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 21:08:25.511 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/02 21:08:25.653 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    512.262µs|   match|[97;44m GET     [0m /swagger/
+2019/08/02 21:08:25.917 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    212.615µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/02 21:08:25.957 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    137.608µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/04 15:00:53.962 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 15:02:47.984 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 15:03:01.698 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    667.201µs|   match|[97;44m GET     [0m /swagger/
+2019/08/04 15:03:01.786 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  25.394493ms|   match|[97;44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/08/04 15:03:01.786 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|  25.271676ms|   match|[97;44m GET     [0m /swagger/swagger-ui.css
+2019/08/04 15:03:01.788 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  26.679586ms|   match|[97;44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/08/04 15:03:02.160 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    309.619µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/04 15:03:22.175 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  42.800892ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/04 15:03:34.268 [C] [panic.go:522]  the request url is  /api/v1/category/getall
+2019/08/04 15:03:34.268 [C] [panic.go:522]  Handler crashed with error unknown model/table name `sub_category`
+2019/08/04 15:03:34.268 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/04 15:03:34.268 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db_tables.go:160
+2019/08/04 15:03:34.269 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db.go:988
+2019/08/04 15:03:34.269 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/08/04 15:03:34.269 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/category.go:97
+2019/08/04 15:03:34.269 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/04 15:03:34.269 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/04 15:03:34.269 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/04 15:03:34.269 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/04 15:03:34.269 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/04 15:03:34.269 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/04 15:03:34.269 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/04 15:03:42.905 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 15:03:44.423 [C] [panic.go:522]  the request url is  /api/v1/category/getall
+2019/08/04 15:03:44.423 [C] [panic.go:522]  Handler crashed with error unknown model/table name `sub_category`
+2019/08/04 15:03:44.423 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/04 15:03:44.423 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db_tables.go:160
+2019/08/04 15:03:44.423 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db.go:988
+2019/08/04 15:03:44.423 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/08/04 15:03:44.423 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/category.go:97
+2019/08/04 15:03:44.423 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/04 15:03:44.423 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/04 15:03:44.423 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/04 15:03:44.423 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/04 15:03:44.423 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/04 15:03:44.423 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/04 15:03:44.424 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/04 15:04:58.160 [C] [panic.go:522]  the request url is  /api/v1/category/get/1
+2019/08/04 15:04:58.160 [C] [panic.go:522]  Handler crashed with error unknown model/table name `sub_category`
+2019/08/04 15:04:58.160 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/04 15:04:58.160 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db_tables.go:160
+2019/08/04 15:04:58.160 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db.go:988
+2019/08/04 15:04:58.160 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm_queryset.go:220
+2019/08/04 15:04:58.160 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/category.go:77
+2019/08/04 15:04:58.160 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/04 15:04:58.160 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/04 15:04:58.160 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/04 15:04:58.160 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/04 15:04:58.160 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/04 15:04:58.160 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/04 15:04:58.161 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/04 15:06:46.189 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 15:06:58.413 [C] [panic.go:522]  the request url is  /api/v1/category/get/1
+2019/08/04 15:06:58.413 [C] [panic.go:522]  Handler crashed with error unknown model/table name `sub_category`
+2019/08/04 15:06:58.413 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/04 15:06:58.413 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db_tables.go:160
+2019/08/04 15:06:58.413 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db.go:988
+2019/08/04 15:06:58.413 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm_queryset.go:220
+2019/08/04 15:06:58.413 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/category.go:77
+2019/08/04 15:06:58.413 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/04 15:06:58.413 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/04 15:06:58.413 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/04 15:06:58.413 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/04 15:06:58.413 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/04 15:06:58.413 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/04 15:06:58.414 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/04 15:08:03.920 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 15:08:11.634 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 15:08:15.458 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  47.583843ms|   match|[97;44m GET     [0m /api/v1/category/get/1   r:/api/v1/category/get/:id
+2019/08/04 15:08:18.896 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  41.732367ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/04 15:08:43.117 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 15:43:49.816 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 15:44:09.449 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    235.625µs| nomatch|[97;44m GET     [0m /api/v1/sub_category/getall
+2019/08/04 15:44:19.505 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 15:44:22.394 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  53.327583ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/04 15:45:23.350 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  47.079305ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/04 15:45:39.606 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 112.731573ms|   match|[97;46m POST    [0m /api/v1/sub_category/add   r:/api/v1/sub_category/add
+2019/08/04 15:45:46.362 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 245.571809ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/04 15:45:48.325 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  30.391894ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/04 15:46:00.827 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  21.751102ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/04 15:46:24.170 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 325.202944ms|   match|[97;46m POST    [0m /api/v1/sub_category/add   r:/api/v1/sub_category/add
+2019/08/04 15:46:27.730 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  29.316158ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/04 15:46:30.325 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  17.910137ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/04 15:46:48.908 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 354.339734ms|   match|[97;46m POST    [0m /api/v1/sub_category/add   r:/api/v1/sub_category/add
+2019/08/04 15:46:59.626 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  54.550165ms|   match|[97;46m POST    [0m /api/v1/sub_category/add   r:/api/v1/sub_category/add
+2019/08/04 15:47:02.868 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   30.01322ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/04 15:47:22.555 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  41.092135ms|   match|[97;46m POST    [0m /api/v1/sub_category/add   r:/api/v1/sub_category/add
+2019/08/04 15:47:31.921 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  49.011149ms|   match|[97;46m POST    [0m /api/v1/sub_category/add   r:/api/v1/sub_category/add
+2019/08/04 15:47:45.232 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 530.365191ms|   match|[97;46m POST    [0m /api/v1/sub_category/add   r:/api/v1/sub_category/add
+2019/08/04 15:47:47.719 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  19.107293ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/04 15:47:55.778 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 420.459881ms|   match|[97;44m GET     [0m /api/v1/sub_category/get/1   r:/api/v1/sub_category/get/:id
+2019/08/04 15:47:58.876 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  26.295705ms|   match|[97;44m GET     [0m /api/v1/sub_category/get/2   r:/api/v1/sub_category/get/:id
+2019/08/04 15:48:02.836 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  19.449029ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/04 15:49:24.528 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 15:49:28.489 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 174.188635ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/04 15:49:45.157 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 269.243789ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/04 15:51:23.366 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  92.549441ms|   match|[97;46m POST    [0m /api/v1/sub_category/update   r:/api/v1/sub_category/update
+2019/08/04 15:51:27.595 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 324.500164ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/04 15:51:41.061 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   22.42212ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/04 15:56:11.801 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    244.077µs| nomatch|[97;44m GET     [0m /api/v1/user/all
+2019/08/04 15:59:51.646 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 15:59:56.115 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    218.538µs| nomatch|[97;44m GET     [0m /api/v1/user/all
+2019/08/04 15:59:58.218 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    208.029µs| nomatch|[97;44m GET     [0m /api/v1/user/all
+2019/08/04 16:00:08.526 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 16:00:11.131 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   41.06677ms|   match|[97;44m GET     [0m /api/v1/user/all   r:/api/v1/user/all
+2019/08/04 16:03:19.106 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 187.259093ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 16:08:38.902 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 112.026288ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 16:09:39.971 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 366.345959ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/04 16:09:55.038 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  19.454072ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/04 16:11:34.833 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 115.773048ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 16:11:39.274 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  29.786353ms|   match|[97;44m GET     [0m /api/v1/article/get/3   r:/api/v1/article/get/:id
+2019/08/04 17:26:44.576 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    215.103µs| nomatch|[97;44m GET     [0m /api/v1/article/getall
+2019/08/04 17:26:51.690 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  25.564132ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/04 17:26:55.714 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  24.308603ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/04 17:26:59.331 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  30.022736ms|   match|[97;44m GET     [0m /api/v1/article/get/3   r:/api/v1/article/get/:id
+2019/08/04 17:36:35.397 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.931425ms|   match|[97;44m GET     [0m /api/v1/article/get/a   r:/api/v1/article/get/:id
+2019/08/04 17:36:43.395 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  21.301417ms|   match|[97;44m GET     [0m /api/v1/article/get/12   r:/api/v1/article/get/:id
+2019/08/04 17:36:48.016 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  18.739042ms|   match|[97;44m GET     [0m /api/v1/article/get/-1   r:/api/v1/article/get/:id
+2019/08/04 17:36:59.926 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  21.894418ms|   match|[97;44m GET     [0m /api/v1/article/get/.   r:/api/v1/article/get/:id
+2019/08/04 17:37:05.318 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    152.759µs|   match|[97;44m GET     [0m /api/v1/article/get//   r:/api/v1/article/get
+2019/08/04 17:37:12.755 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     50.028µs|   match|[97;44m GET     [0m /api/v1/article/get///   r:/api/v1/article/get
+2019/08/04 17:37:56.338 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 17:38:00.370 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    149.011µs|   match|[97;44m GET     [0m /swagger/
+2019/08/04 17:38:00.886 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   3.057075ms|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/04 17:41:57.351 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 17:42:00.434 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    187.715µs|   match|[97;44m GET     [0m /swagger/
+2019/08/04 17:42:01.382 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|     97.278µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/04 17:42:13.626 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 17:42:15.408 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|     180.87µs|   match|[97;44m GET     [0m /swagger/
+2019/08/04 17:42:15.688 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    178.558µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/04 17:42:35.600 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 17:42:44.474 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 17:42:49.475 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    246.299µs|   match|[97;44m GET     [0m /swagger/
+2019/08/04 17:42:49.507 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    144.538µs|   match|[97;44m GET     [0m /swagger/swagger-ui.css
+2019/08/04 17:42:49.517 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   9.964873ms|   match|[97;44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/08/04 17:42:49.520 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   4.246073ms|   match|[97;44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/08/04 17:42:50.026 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    152.152µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/04 17:42:50.061 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    251.922µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/04 17:43:05.226 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 17:43:07.433 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    135.783µs|   match|[97;44m GET     [0m /swagger/
+2019/08/04 17:43:07.929 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|     106.48µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/04 17:50:24.856 [D] [server.go:2774]  |            ::1|[97;43m 404 [0m|    543.716µs| nomatch|[97;44m GET     [0m /favicon.ico
+2019/08/04 17:58:44.876 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 683.439429ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:00:50.349 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 18:00:55.202 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 391.121688ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:01:03.320 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  81.844574ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:01:15.442 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  93.514819ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:02:01.876 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 18:02:08.841 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 18:02:13.407 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 246.888351ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:02:20.804 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 102.541484ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:02:30.952 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 103.686389ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:03:23.656 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 18:03:24.302 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 197.868039ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:03:28.732 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  94.229892ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:03:40.099 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  43.594604ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/04 18:03:44.695 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  32.902273ms|   match|[97;44m GET     [0m /api/v1/article/get/3   r:/api/v1/article/get/:id
+2019/08/04 18:03:47.516 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.217348ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/04 18:03:49.508 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  22.322324ms|   match|[97;44m GET     [0m /api/v1/article/get/5   r:/api/v1/article/get/:id
+2019/08/04 18:04:11.142 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  98.277453ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:04:18.030 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  88.160896ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:04:23.801 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  91.338346ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:06:00.305 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/04 18:06:07.946 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 589.529249ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:06:12.404 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 144.975559ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/04 18:06:16.017 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 690.216906ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 09:14:57.018 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:15:12.365 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:27:32.363 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:27:59.493 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 156.336323ms|   match|[97;44m GET     [0m /api/v1/article/get/5   r:/api/v1/article/get/:id
+2019/08/05 09:29:43.860 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:29:48.963 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 124.504364ms|   match|[97;44m GET     [0m /api/v1/article/get/5   r:/api/v1/article/get/:id
+2019/08/05 09:34:44.899 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:34:51.280 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 146.508611ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:42:46.858 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:43:03.524 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  150.76611ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:43:05.604 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  80.465226ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:43:06.512 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  123.69299ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:43:11.902 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 310.897062ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:43:13.179 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 248.134656ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:43:14.039 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  73.520788ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:45:25.356 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:45:28.810 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 111.353112ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:47:36.656 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:47:40.592 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   89.99538ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:48:02.581 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:48:03.265 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 155.324844ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:48:56.710 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:49:00.749 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 101.387465ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:49:03.042 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  95.995911ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:49:08.538 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  92.373597ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/05 09:49:38.968 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:49:59.492 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:54:01.652 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:54:23.932 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 331.366473ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 09:54:34.225 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 305.859559ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 09:54:45.296 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  85.360193ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/05 09:54:48.248 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  76.046049ms|   match|[97;44m GET     [0m /api/v1/article/get/5   r:/api/v1/article/get/:id
+2019/08/05 09:54:51.526 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  69.670639ms|   match|[97;44m GET     [0m /api/v1/article/get/3   r:/api/v1/article/get/:id
+2019/08/05 09:54:55.531 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  67.191539ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/05 09:54:57.342 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  76.293859ms|   match|[97;44m GET     [0m /api/v1/article/get/5   r:/api/v1/article/get/:id
+2019/08/05 09:54:58.760 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  59.869161ms|   match|[97;44m GET     [0m /api/v1/article/get/6   r:/api/v1/article/get/:id
+2019/08/05 09:55:03.713 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   106.2572ms|   match|[97;44m GET     [0m /api/v1/article/get/6   r:/api/v1/article/get/:id
+2019/08/05 09:55:09.074 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 148.807025ms|   match|[97;44m GET     [0m /api/v1/article/get/7   r:/api/v1/article/get/:id
+2019/08/05 09:55:11.116 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  82.800224ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/05 09:55:15.498 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  80.564629ms|   match|[97;44m GET     [0m /api/v1/article/get/6   r:/api/v1/article/get/:id
+2019/08/05 09:55:53.303 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 09:56:03.285 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 145.331808ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 09:56:19.212 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  71.796311ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 09:56:22.654 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 110.564752ms|   match|[97;44m GET     [0m /api/v1/article/get/20   r:/api/v1/article/get/:id
+2019/08/05 09:56:27.229 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  62.127321ms|   match|[97;44m GET     [0m /api/v1/article/get/20   r:/api/v1/article/get/:id
+2019/08/05 09:56:28.513 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  71.330495ms|   match|[97;44m GET     [0m /api/v1/article/get/20   r:/api/v1/article/get/:id
+2019/08/05 09:56:33.315 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   75.96914ms|   match|[97;44m GET     [0m /api/v1/article/get/22   r:/api/v1/article/get/:id
+2019/08/05 09:56:35.615 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 186.355218ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 09:56:37.060 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  83.051021ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 09:56:38.066 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  184.86228ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 09:56:38.615 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  62.527799ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 09:56:39.288 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  64.956501ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 09:56:39.961 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  74.361777ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 09:56:40.609 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  68.329449ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 09:56:41.203 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   60.91278ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 09:56:41.884 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  76.999848ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 09:56:56.015 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  64.437055ms|   match|[97;44m GET     [0m /api/v1/article/get/19   r:/api/v1/article/get/:id
+2019/08/05 09:57:02.410 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  80.330782ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 09:57:18.933 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:04:19.779 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:04:22.573 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  85.450976ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 10:04:30.678 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   69.99572ms|   match|[97;44m GET     [0m /api/v1/article/get/28   r:/api/v1/article/get/:id
+2019/08/05 10:04:32.283 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  66.599865ms|   match|[97;44m GET     [0m /api/v1/article/get/28   r:/api/v1/article/get/:id
+2019/08/05 10:04:32.979 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  173.52817ms|   match|[97;44m GET     [0m /api/v1/article/get/28   r:/api/v1/article/get/:id
+2019/08/05 10:06:16.108 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 4.785341232s|   match|[97;44m GET     [0m /api/v1/article/get/28   r:/api/v1/article/get/:id
+2019/08/05 10:13:10.260 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  64.786305ms|   match|[97;44m GET     [0m /api/v1/article/get/28   r:/api/v1/article/get/:id
+2019/08/05 10:13:10.942 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  57.387189ms|   match|[97;44m GET     [0m /api/v1/article/get/28   r:/api/v1/article/get/:id
+2019/08/05 10:13:11.654 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   54.34106ms|   match|[97;44m GET     [0m /api/v1/article/get/28   r:/api/v1/article/get/:id
+2019/08/05 10:15:34.529 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:18:21.313 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:18:35.443 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  129.91207ms|   match|[97;44m GET     [0m /api/v1/article/get/28   r:/api/v1/article/get/:id
+2019/08/05 10:19:00.379 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  78.041601ms|   match|[97;44m GET     [0m /api/v1/article/get/28a   r:/api/v1/article/get/:id
+2019/08/05 10:19:21.695 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  48.383184ms|   match|[97;44m GET     [0m /api/v1/article/get/28a   r:/api/v1/article/get/:id
+2019/08/05 10:19:48.746 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:20:00.875 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  22.867221ms|   match|[97;44m GET     [0m /api/v1/article/get/28a   r:/api/v1/article/get/:id
+2019/08/05 10:20:12.602 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  157.01515ms|   match|[97;44m GET     [0m /api/v1/article/get/28   r:/api/v1/article/get/:id
+2019/08/05 10:24:01.898 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:24:28.309 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:24:37.959 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:24:50.316 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:25:08.943 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   70.19731ms|   match|[97;44m GET     [0m /api/v1/article/get/28   r:/api/v1/article/get/:id
+2019/08/05 10:25:10.694 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  23.867054ms|   match|[97;44m GET     [0m /api/v1/article/get/28a   r:/api/v1/article/get/:id
+2019/08/05 10:25:24.154 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  72.481431ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 10:25:39.460 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:26:09.349 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   94.30527ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 10:26:34.475 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  68.442857ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 10:34:13.767 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  49.297236ms|   match|[97;44m GET     [0m /api/v1/article/get/21   r:/api/v1/article/get/:id
+2019/08/05 10:34:43.835 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:35:19.990 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 122.714685ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 10:35:24.662 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 113.303246ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/05 10:35:27.077 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  91.770406ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/05 10:35:27.940 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  65.229015ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/05 10:35:28.686 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  74.778088ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/05 10:35:29.322 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  68.741001ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/05 10:50:31.983 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:50:46.016 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 381.010845ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 10:51:12.872 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    186.495µs| nomatch|[97;44m GET     [0m /api/v1/article/delete/2
+2019/08/05 10:51:23.361 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 10:51:26.489 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 186.604227ms|   match|[97;44m GET     [0m /api/v1/article/delete/2   r:/api/v1/article/delete/:id
+2019/08/05 10:56:16.530 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 11:06:53.156 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 11:07:07.386 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 11:07:38.451 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  81.209967ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/05 11:08:49.246 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  101.72557ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 11:09:15.535 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    171.848µs|   match|[97;46m POST    [0m /api/v1/article/edit   r:/api/v1/article/edit
+2019/08/05 11:11:26.076 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 11:11:42.662 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 11:11:46.121 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  81.187693ms|   match|[97;46m POST    [0m /api/v1/article/edit   r:/api/v1/article/edit
+2019/08/05 13:33:42.055 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 13:33:46.968 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 13:34:07.088 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 141.400683ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 13:34:52.271 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  87.157661ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 13:34:58.970 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  70.791704ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 13:35:09.371 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    169.935µs|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:35:57.733 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     84.675µs|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:36:18.423 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 13:36:22.646 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    139.969µs|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:39:51.620 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 13:45:23.904 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 13:52:15.790 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 13:52:21.403 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  57.209968ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:53:31.644 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 13:54:14.689 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 13:54:24.806 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  50.449273ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:54:37.220 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 135.068715ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:54:56.705 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 109.249628ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 13:55:00.595 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  23.925215ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:55:15.173 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 152.784799ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:55:21.557 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  11.767472ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:55:33.145 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  13.419276ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:56:01.357 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   16.07869ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:56:40.339 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  74.553431ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 13:56:44.162 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  93.956716ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 13:56:47.674 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  70.326493ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 13:56:57.321 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  71.374697ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:57:13.083 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  26.003912ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:57:27.322 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  56.958531ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/05 13:57:30.162 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  15.245303ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:57:41.660 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 13:57:48.036 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   26.08036ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:58:12.565 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  24.964385ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 13:58:33.558 [C] [panic.go:522]  the request url is  /api/v1/article/getall
+2019/08/05 13:58:33.558 [C] [panic.go:522]  Handler crashed with error unknown field/column name `sub_category__id__exact`
+2019/08/05 13:58:33.558 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/05 13:58:33.558 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db_tables.go:368
+2019/08/05 13:58:33.558 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db.go:990
+2019/08/05 13:58:33.558 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/08/05 13:58:33.558 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/article.go:254
+2019/08/05 13:58:33.558 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/05 13:58:33.558 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/05 13:58:33.559 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/05 13:58:33.559 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/05 13:58:33.559 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/05 13:58:33.559 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/05 13:58:33.559 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/05 13:58:37.009 [C] [panic.go:522]  the request url is  /api/v1/article/getall
+2019/08/05 13:58:37.010 [C] [panic.go:522]  Handler crashed with error unknown field/column name `sub_category__id__exact`
+2019/08/05 13:58:37.010 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/05 13:58:37.010 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db_tables.go:368
+2019/08/05 13:58:37.010 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db.go:990
+2019/08/05 13:58:37.010 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/08/05 13:58:37.010 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/article.go:254
+2019/08/05 13:58:37.010 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/05 13:58:37.010 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/05 13:58:37.010 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/05 13:58:37.010 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/05 13:58:37.010 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/05 13:58:37.010 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/05 13:58:37.016 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/05 14:00:25.009 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 14:00:29.655 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  30.457387ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 14:01:27.240 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 14:02:17.437 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    338.069µs|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 14:02:28.685 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  36.342316ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 14:02:33.490 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  17.939006ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 14:02:37.948 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     242.61µs|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 14:02:41.963 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  36.977004ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 14:03:59.454 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   53.67407ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 14:04:10.019 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 105.280643ms|   match|[97;44m GET     [0m /api/v1/article/get/7   r:/api/v1/article/get/:id
+2019/08/05 14:11:58.998 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 14:12:37.548 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|     93.818µs|   match|[97;44m GET     [0m /     r:/
+2019/08/05 14:12:43.914 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    264.468µs|   match|[97;44m GET     [0m /swagger/
+2019/08/05 14:12:43.958 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    499.253µs|   match|[97;44m GET     [0m /swagger/swagger-ui.css
+2019/08/05 14:12:43.971 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|   13.13423ms|   match|[97;44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/08/05 14:12:43.973 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|  13.275348ms|   match|[97;44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/08/05 14:12:44.306 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    312.166µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/05 14:13:17.973 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 14:13:21.116 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    315.201µs|   match|[97;44m GET     [0m /swagger/
+2019/08/05 14:13:21.570 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   1.406334ms|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/05 14:14:08.478 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 14:14:13.265 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    308.227µs|   match|[97;44m GET     [0m /swagger/
+2019/08/05 14:14:13.306 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    148.171µs|   match|[97;44m GET     [0m /swagger/swagger-ui.css
+2019/08/05 14:14:13.318 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   1.720409ms|   match|[97;44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/08/05 14:14:13.318 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   6.649786ms|   match|[97;44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/08/05 14:14:14.058 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|     161.64µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/05 14:14:14.090 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    110.407µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/05 14:16:28.310 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 14:17:13.066 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 14:18:09.189 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 14:20:06.815 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 14:20:13.196 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    214.265µs|   match|[97;44m GET     [0m /swagger/
+2019/08/05 14:20:13.701 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    107.915µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/05 14:23:39.963 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 14:23:45.236 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    183.131µs|   match|[97;44m GET     [0m /swagger/
+2019/08/05 14:23:45.266 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|     210.68µs|   match|[97;44m GET     [0m /swagger/swagger-ui.css
+2019/08/05 14:23:45.290 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.543176ms|   match|[97;44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/08/05 14:23:45.289 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    4.97368ms|   match|[97;44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/08/05 14:23:46.172 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    174.292µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/05 14:23:46.209 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    165.631µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/05 15:23:35.840 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:23:57.514 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    330.073µs| nomatch|[97;46m POST    [0m /api/v1/message/add
+2019/08/05 15:24:08.458 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:24:10.687 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   44.96718ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 15:24:59.558 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:25:47.170 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:25:57.732 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  30.119028ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 15:26:02.169 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.275651ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 15:26:07.944 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  27.566525ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 15:28:37.603 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:28:38.937 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 239.339023ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 15:33:45.050 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:35:29.601 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:39:19.909 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:39:26.800 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    392.144µs| nomatch|[97;46m POST    [0m /api/v1/message/get
+2019/08/05 15:39:36.591 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:39:39.237 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|     319.98µs| nomatch|[97;46m POST    [0m /api/v1/message/get
+2019/08/05 15:39:51.418 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  26.400895ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 15:42:07.680 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:42:12.641 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.713741ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 15:42:40.931 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    385.902µs| nomatch|[97;44m GET     [0m /api/v1/message/add
+2019/08/05 15:42:52.893 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  28.183856ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 15:42:56.433 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  56.674397ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 15:43:32.330 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  24.691637ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 15:43:33.409 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:43:34.611 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 106.936718ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 15:44:01.561 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:44:01.642 [C] [panic.go:522]  the request url is  /api/v1/message/get
+2019/08/05 15:44:01.642 [C] [panic.go:522]  Handler crashed with error interface conversion: interface {} is []interface {}, not []uint8
+2019/08/05 15:44:01.642 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/05 15:44:01.642 [C] [panic.go:522]  /usr/local/go/src/runtime/iface.go:248
+2019/08/05 15:44:01.642 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/message.go:88
+2019/08/05 15:44:01.642 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/05 15:44:01.642 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/05 15:44:01.642 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/05 15:44:01.642 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/05 15:44:01.642 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/05 15:44:01.643 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/05 15:44:01.643 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/05 15:44:03.210 [C] [panic.go:522]  the request url is  /api/v1/message/get
+2019/08/05 15:44:03.210 [C] [panic.go:522]  Handler crashed with error interface conversion: interface {} is []interface {}, not []uint8
+2019/08/05 15:44:03.210 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/05 15:44:03.210 [C] [panic.go:522]  /usr/local/go/src/runtime/iface.go:248
+2019/08/05 15:44:03.210 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/message.go:88
+2019/08/05 15:44:03.210 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/05 15:44:03.210 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/05 15:44:03.210 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/05 15:44:03.210 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/05 15:44:03.210 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/05 15:44:03.210 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/05 15:44:03.212 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/05 15:44:43.986 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:44:46.763 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.511858ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 15:45:48.371 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:45:50.939 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:45:51.557 [C] [panic.go:522]  the request url is  /api/v1/message/get
+2019/08/05 15:45:51.557 [C] [panic.go:522]  Handler crashed with error interface conversion: interface {} is []interface {}, not []uint8
+2019/08/05 15:45:51.558 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/05 15:45:51.558 [C] [panic.go:522]  /usr/local/go/src/runtime/iface.go:248
+2019/08/05 15:45:51.558 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/message.go:91
+2019/08/05 15:45:51.558 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/05 15:45:51.558 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/05 15:45:51.558 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/05 15:45:51.558 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/05 15:45:51.558 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/05 15:45:51.558 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/05 15:45:51.559 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/05 15:45:53.077 [C] [panic.go:522]  the request url is  /api/v1/message/get
+2019/08/05 15:45:53.077 [C] [panic.go:522]  Handler crashed with error interface conversion: interface {} is []interface {}, not []uint8
+2019/08/05 15:45:53.077 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/05 15:45:53.077 [C] [panic.go:522]  /usr/local/go/src/runtime/iface.go:248
+2019/08/05 15:45:53.077 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/message.go:91
+2019/08/05 15:45:53.077 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/05 15:45:53.077 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/05 15:45:53.077 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/05 15:45:53.077 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/05 15:45:53.077 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/05 15:45:53.077 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/05 15:45:53.078 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/05 15:52:58.330 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:55:03.396 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 15:57:04.546 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   33.21015ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:00:54.499 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 16:03:16.103 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 16:03:26.764 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 16:03:29.523 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  33.889546ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:08:09.168 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 16:08:12.235 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  50.997339ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:12:26.465 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 16:12:33.116 [C] [panic.go:522]  the request url is  /api/v1/message/get
+2019/08/05 16:12:33.116 [C] [panic.go:522]  Handler crashed with error interface conversion: interface {} is []interface {}, not [][]uint8
+2019/08/05 16:12:33.117 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/05 16:12:33.117 [C] [panic.go:522]  /usr/local/go/src/runtime/iface.go:248
+2019/08/05 16:12:33.117 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/message.go:89
+2019/08/05 16:12:33.117 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/05 16:12:33.117 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/05 16:12:33.117 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/05 16:12:33.117 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/05 16:12:33.117 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/05 16:12:33.117 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/05 16:12:33.117 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/05 16:14:30.005 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 16:14:36.690 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  27.319479ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:19:37.818 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 16:19:42.472 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  35.524727ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:21:13.801 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  79.326985ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 16:21:17.524 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  29.757847ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 16:21:21.761 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  65.650513ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 16:21:27.387 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  36.664235ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 16:21:34.429 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  92.003196ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 16:21:42.377 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  33.323637ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 16:21:47.636 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  29.389698ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 16:21:51.329 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  27.322811ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:22:01.181 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  29.537568ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 16:22:03.706 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  38.217098ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 16:22:05.688 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   57.23391ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:22:26.667 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 16:22:27.682 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   33.20559ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:22:38.080 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  27.095047ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:22:40.840 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  28.253789ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:39:18.075 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 16:39:53.201 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  32.401841ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:39:57.270 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  54.685777ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:40:00.022 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  51.773632ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:40:02.434 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   32.80671ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:47:14.240 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 16:47:20.421 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 16:47:32.863 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  60.415575ms|   match|[97;44m GET     [0m /api/v1/message/delete   r:/api/v1/message/delete
+2019/08/05 16:47:53.466 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  29.133061ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:48:02.365 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   58.26296ms|   match|[97;44m GET     [0m /api/v1/message/delete   r:/api/v1/message/delete
+2019/08/05 16:48:04.878 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  66.419453ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:48:44.935 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|31.397857614s|   match|[97;44m GET     [0m /api/v1/message/delete   r:/api/v1/message/delete
+2019/08/05 16:48:46.071 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 16:49:04.451 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  25.543959ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 16:49:07.210 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  27.348031ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 16:49:11.621 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    23.8234ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/05 16:49:14.194 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 102.595634ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 16:49:17.955 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 106.777182ms|   match|[97;44m GET     [0m /api/v1/message/delete   r:/api/v1/message/delete
+2019/08/05 16:49:20.310 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  24.810523ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/05 17:24:39.692 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 17:24:55.719 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  30.009521ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 17:25:53.726 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  74.290456ms|   match|[97;44m GET     [0m /api/v1/user/all   r:/api/v1/user/all
+2019/08/05 17:26:00.537 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    278.055µs| nomatch|[97;46m POST    [0m /api/v1/comment/add
+2019/08/05 17:26:12.771 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 17:26:18.644 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  66.158229ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:26:38.339 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  31.543215ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:26:45.093 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  77.224145ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/05 17:30:15.786 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  36.315274ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/05 17:30:42.010 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  34.079161ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:30:47.386 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  31.924269ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:30:51.314 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  33.266334ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:33:36.708 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    1.10702ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:33:41.129 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    167.438µs|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:33:45.414 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    150.951µs|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:33:49.820 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    125.833µs|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:33:55.066 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    188.044µs|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:34:24.133 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    173.723µs|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:34:29.214 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  34.626131ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:34:35.408 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  32.178468ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:37:26.515 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 17:37:29.465 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  80.257419ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/05 17:37:49.121 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/05 17:37:51.967 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  28.625421ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/06 08:54:01.432 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 08:54:28.498 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  62.242804ms|   match|[97;44m GET     [0m /api/v1/user/all   r:/api/v1/user/all
+2019/08/06 08:54:57.412 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  60.570443ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/06 09:03:43.957 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  49.208847ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/06 09:04:23.649 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  87.416178ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 09:06:35.308 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:06:37.266 [C] [panic.go:522]  the request url is  /api/v1/article/get/8
+2019/08/06 09:06:37.266 [C] [panic.go:522]  Handler crashed with error unknown model/table name `comment`
+2019/08/06 09:06:37.266 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 09:06:37.266 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db_tables.go:160
+2019/08/06 09:06:37.266 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db.go:988
+2019/08/06 09:06:37.266 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm_queryset.go:220
+2019/08/06 09:06:37.267 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/article.go:138
+2019/08/06 09:06:37.267 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 09:06:37.267 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 09:06:37.267 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 09:06:37.267 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 09:06:37.267 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 09:06:37.267 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 09:06:37.268 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 09:07:10.421 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:07:14.031 [C] [panic.go:522]  the request url is  /api/v1/article/get/8
+2019/08/06 09:07:14.031 [C] [panic.go:522]  Handler crashed with error unknown model/table name `Comment`
+2019/08/06 09:07:14.031 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 09:07:14.031 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db_tables.go:160
+2019/08/06 09:07:14.031 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/db.go:988
+2019/08/06 09:07:14.031 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/orm/orm_queryset.go:220
+2019/08/06 09:07:14.031 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/article.go:138
+2019/08/06 09:07:14.031 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 09:07:14.031 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 09:07:14.031 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 09:07:14.031 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 09:07:14.031 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 09:07:14.031 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 09:07:14.032 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 09:08:17.113 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:11:09.366 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:11:14.559 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  270.32047ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 09:18:09.161 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:18:12.667 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 142.402106ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 09:18:40.426 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 173.673694ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/06 09:18:46.790 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  85.007733ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/06 09:18:50.438 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 1.100471761s|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 09:22:57.242 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:23:10.519 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 107.846403ms|   match|[97;46m POST    [0m /api/v1/comment/add   r:/api/v1/comment/add
+2019/08/06 09:23:16.406 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  97.825073ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 09:25:05.246 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:25:08.469 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 152.347595ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 09:25:36.308 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:30:16.608 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:31:37.617 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 146.708988ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 09:43:38.526 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:43:47.497 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:44:10.510 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    152.411µs|   match|[97;44m GET     [0m /api/v1/comment/delete/6   r:/api/v1/comment/delete/:id
+2019/08/06 09:44:28.584 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:44:45.188 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    151.359µs|   match|[97;44m GET     [0m /api/v1/comment/delete/6   r:/api/v1/comment/delete/:id
+2019/08/06 09:44:47.792 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     88.689µs|   match|[97;44m GET     [0m /api/v1/comment/delete/6a   r:/api/v1/comment/delete/:id
+2019/08/06 09:45:32.376 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 09:45:35.911 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    166.316µs|   match|[97;44m GET     [0m /api/v1/comment/delete/a   r:/api/v1/comment/delete/:id
+2019/08/06 09:45:40.270 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  57.110007ms|   match|[97;44m GET     [0m /api/v1/comment/delete/-1   r:/api/v1/comment/delete/:id
+2019/08/06 09:48:31.740 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  16.438907ms|   match|[97;44m GET     [0m /api/v1/comment/delete/999   r:/api/v1/comment/delete/:id
+2019/08/06 09:48:45.628 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  47.190445ms|   match|[97;44m GET     [0m /api/v1/comment/delete/6   r:/api/v1/comment/delete/:id
+2019/08/06 09:48:47.830 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 101.277394ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 09:49:04.707 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  34.004123ms|   match|[97;44m GET     [0m /api/v1/comment/delete/7   r:/api/v1/comment/delete/:id
+2019/08/06 09:49:06.922 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 124.072423ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 10:20:53.936 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 10:21:15.793 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  99.618986ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 10:21:32.667 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    299.652µs| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 10:21:42.966 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 10:21:45.918 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 139.618002ms|   match|[97;46m POST    [0m /api/v1/sub_comment/add   r:/api/v1/sub_comment/add
+2019/08/06 10:22:04.794 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  71.623099ms|   match|[97;46m POST    [0m /api/v1/sub_comment/add   r:/api/v1/sub_comment/add
+2019/08/06 10:22:07.622 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 123.196183ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 10:23:41.342 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 10:23:44.867 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 139.881586ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 10:24:15.563 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 10:24:18.320 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 154.804279ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 10:25:58.332 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 10:26:02.246 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 223.269776ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 10:57:01.967 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 10:57:24.397 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 211.246586ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/06 10:57:35.978 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  50.086467ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/06 10:58:37.311 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 119.388052ms|   match|[97;44m GET     [0m /api/v1/article/get/11   r:/api/v1/article/get/:id
+2019/08/06 10:58:44.180 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 123.021192ms|   match|[97;44m GET     [0m /api/v1/article/get/11   r:/api/v1/article/get/:id
+2019/08/06 10:58:45.943 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 118.929363ms|   match|[97;44m GET     [0m /api/v1/article/get/11   r:/api/v1/article/get/:id
+2019/08/06 11:01:41.203 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 11:26:30.439 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 11:26:38.498 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|     90.761µs|   match|[97;44m GET     [0m /     r:/
+2019/08/06 11:26:42.491 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|     97.491µs|   match|[97;44m GET     [0m /swagger/
+2019/08/06 11:26:42.523 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|   7.392612ms|   match|[97;44m GET     [0m /swagger/swagger-ui.css
+2019/08/06 11:26:42.524 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   8.798504ms|   match|[97;44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/08/06 11:26:42.533 [D] [server.go:2774]  |            ::1|[90;47m 304 [0m|    300.737µs|   match|[97;44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/08/06 11:26:42.868 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    263.146µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/06 11:28:10.335 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    121.255µs|   match|[97;44m GET     [0m /swagger/
+2019/08/06 11:28:10.377 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    142.859µs|   match|[97;44m GET     [0m /swagger/swagger-ui.css
+2019/08/06 11:28:10.379 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    796.454µs|   match|[97;44m GET     [0m /swagger/swagger-ui-bundle.js
+2019/08/06 11:28:10.381 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    250.789µs|   match|[97;44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2019/08/06 11:28:11.102 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|    116.573µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2019/08/06 11:28:11.143 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|         96µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2019/08/06 13:17:16.856 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 13:17:20.298 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 159.036622ms|   match|[97;44m GET     [0m /api/v1/article/get/11   r:/api/v1/article/get/:id
+2019/08/06 13:17:27.440 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 104.971507ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/06 13:17:48.167 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 141.214463ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 13:25:00.232 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 13:25:13.405 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 313.487824ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/06 13:31:02.521 [D] [server.go:2774]  |            ::1|[97;43m 404 [0m|    273.348µs| nomatch|[97;44m GET     [0m /qps
+2019/08/06 13:52:36.078 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 13:53:45.739 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 13:59:33.459 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 14:15:11.488 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 14:15:25.308 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  27.931278ms| nomatch|[97;46m POST    [0m /api/v1/article/add
+2019/08/06 14:18:14.578 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 14:18:17.742 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  44.143579ms| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 14:20:03.746 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  22.283613ms| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 14:24:47.944 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 212.895901ms| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 14:25:00.022 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   31.15036ms| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 14:27:39.145 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    174.788µs|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/06 14:27:49.393 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    142.785µs|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/06 14:28:00.988 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 162.397908ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/06 14:29:10.618 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   29.52472ms| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 14:32:25.282 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 14:32:35.846 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  33.942453ms| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 14:34:38.097 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 14:34:41.389 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  57.861033ms| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 14:34:58.560 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 14:35:01.262 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  24.681352ms| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 15:22:11.214 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 15:22:27.881 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 173.760694ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/06 15:24:11.842 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 15:24:36.594 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 495.230208ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/06 15:24:50.305 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 310.500492ms|   match|[97;46m POST    [0m /api/v1/sub_comment/add   r:/api/v1/sub_comment/add
+2019/08/06 15:25:06.937 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 112.302349ms|   match|[97;46m POST    [0m /api/v1/sub_comment/add   r:/api/v1/sub_comment/add
+2019/08/06 15:25:49.708 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 537.764753ms|   match|[97;46m POST    [0m /api/v1/sub_comment/add   r:/api/v1/sub_comment/add
+2019/08/06 15:27:11.959 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 15:36:07.622 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 15:38:06.258 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 15:38:15.141 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 281.084056ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/06 15:38:25.578 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 222.402515ms|   match|[97;46m POST    [0m /api/v1/sub_comment/add   r:/api/v1/sub_comment/add
+2019/08/06 15:38:35.438 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  35.857092ms| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 15:38:52.705 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 15:38:53.165 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  25.890826ms| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 15:38:57.481 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 218.227119ms|   match|[97;46m POST    [0m /api/v1/sub_comment/add   r:/api/v1/sub_comment/add
+2019/08/06 15:39:03.920 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 130.327509ms|   match|[97;46m POST    [0m /api/v1/sub_comment/add   r:/api/v1/sub_comment/add
+2019/08/06 15:45:28.370 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 15:45:46.407 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 137.080536ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 15:58:54.979 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 15:59:07.313 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 202.419697ms|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 15:59:15.819 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  52.590822ms| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 15:59:20.280 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 407.026029ms|   match|[97;46m POST    [0m /api/v1/sub_comment/add   r:/api/v1/sub_comment/add
+2019/08/06 15:59:31.996 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 185.850463ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/06 15:59:53.460 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|     352.64µs| nomatch|[97;46m POST    [0m /api/v1/user/regist
+2019/08/06 16:00:03.497 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 348.235052ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/06 16:00:10.845 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 170.486241ms| nomatch|[97;46m POST    [0m /api/v1/sub_comment/add
+2019/08/06 16:00:22.074 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 1.567981528s|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/06 16:00:28.623 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 107.038308ms|   match|[97;46m POST    [0m /api/v1/sub_comment/add   r:/api/v1/sub_comment/add
+2019/08/06 16:00:42.928 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 133.376996ms|   match|[97;46m POST    [0m /api/v1/sub_comment/add   r:/api/v1/sub_comment/add
+2019/08/06 16:18:25.607 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 16:47:48.851 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 16:49:23.913 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 16:49:25.396 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 16:49:31.572 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 16:49:58.169 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 185.342868ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/06 16:52:35.395 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 16:52:35.396 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 16:52:35.396 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 16:52:35.396 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 16:52:35.396 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 16:52:35.396 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:65
+2019/08/06 16:52:35.396 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 16:52:35.396 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 16:52:35.396 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 16:52:35.396 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 16:52:35.396 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 16:52:35.396 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 16:52:35.397 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 16:53:15.130 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 1.154506762s|   match|[97;44m GET     [0m /api/v1/article/get/8   r:/api/v1/article/get/:id
+2019/08/06 16:53:29.143 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 16:53:29.143 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 16:53:29.143 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 16:53:29.143 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 16:53:29.143 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 16:53:29.143 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:65
+2019/08/06 16:53:29.143 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 16:53:29.143 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 16:53:29.143 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 16:53:29.143 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 16:53:29.143 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 16:53:29.143 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 16:53:29.144 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 16:54:45.111 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 16:54:45.111 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 16:54:45.111 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 16:54:45.111 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 16:54:45.111 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 16:54:45.111 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:89
+2019/08/06 16:54:45.111 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 16:54:45.111 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 16:54:45.111 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 16:54:45.112 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 16:54:45.112 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 16:54:45.112 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 16:54:45.112 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 16:55:51.701 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 16:55:56.849 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 259.890568ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 16:56:05.996 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 354.647342ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 16:56:11.425 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  52.873479ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 16:57:33.507 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  14.181608ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 16:57:59.012 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  13.581261ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 17:02:56.658 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:03:01.420 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 17:03:01.420 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 17:03:01.420 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 17:03:01.420 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 17:03:01.420 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 17:03:01.420 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:56
+2019/08/06 17:03:01.420 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 17:03:01.420 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 17:03:01.420 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 17:03:01.420 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 17:03:01.420 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 17:03:01.420 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 17:03:01.421 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 17:04:53.662 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:04:56.283 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 17:04:56.283 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 17:04:56.283 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 17:04:56.284 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 17:04:56.284 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 17:04:56.284 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:59
+2019/08/06 17:04:56.284 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 17:04:56.284 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 17:04:56.284 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 17:04:56.284 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 17:04:56.284 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 17:04:56.284 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 17:04:56.284 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 17:05:42.212 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:05:45.511 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 17:05:45.512 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 17:05:45.512 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 17:05:45.512 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 17:05:45.512 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 17:05:45.512 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:64
+2019/08/06 17:05:45.512 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 17:05:45.512 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 17:05:45.512 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 17:05:45.512 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 17:05:45.512 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 17:05:45.512 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 17:05:45.513 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 17:06:54.639 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:06:57.806 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  43.789023ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 17:07:42.255 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:07:44.609 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 17:07:44.609 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 17:07:44.609 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 17:07:44.609 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 17:07:44.610 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 17:07:44.610 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:70
+2019/08/06 17:07:44.610 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 17:07:44.610 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 17:07:44.610 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 17:07:44.610 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 17:07:44.610 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 17:07:44.610 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 17:07:44.610 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 17:10:17.657 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:10:21.438 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   34.02111ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 17:11:18.913 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:11:22.530 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  34.261406ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 17:22:02.166 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:22:06.643 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 17:22:06.643 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 17:22:06.643 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 17:22:06.643 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 17:22:06.643 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 17:22:06.643 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:59
+2019/08/06 17:22:06.643 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 17:22:06.643 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 17:22:06.643 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 17:22:06.643 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 17:22:06.643 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 17:22:06.643 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 17:22:06.644 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 17:30:46.955 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:30:50.205 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 17:30:50.205 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 17:30:50.205 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 17:30:50.205 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 17:30:50.205 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 17:30:50.205 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:59
+2019/08/06 17:30:50.205 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 17:30:50.205 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 17:30:50.205 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 17:30:50.205 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 17:30:50.206 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 17:30:50.206 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 17:30:50.206 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 17:31:06.585 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  53.209945ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 17:33:20.828 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:33:26.908 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 17:33:26.908 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 17:33:26.909 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 17:33:26.909 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 17:33:26.909 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 17:33:26.909 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:59
+2019/08/06 17:33:26.909 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 17:33:26.909 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 17:33:26.909 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 17:33:26.909 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 17:33:26.909 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 17:33:26.909 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 17:33:26.909 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 17:34:23.950 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 17:34:23.950 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 17:34:23.950 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 17:34:23.950 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 17:34:23.950 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 17:34:23.950 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:59
+2019/08/06 17:34:23.950 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 17:34:23.950 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 17:34:23.950 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 17:34:23.950 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 17:34:23.950 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 17:34:23.950 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 17:34:23.951 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 17:34:24.805 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:34:35.095 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 17:34:35.095 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 17:34:35.095 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 17:34:35.095 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 17:34:35.095 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 17:34:35.095 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:59
+2019/08/06 17:34:35.095 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 17:34:35.095 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 17:34:35.095 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 17:34:35.095 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 17:34:35.095 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 17:34:35.095 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 17:34:35.096 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 17:36:14.184 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:36:18.544 [C] [panic.go:522]  the request url is  /api/v1/user/profile/add
+2019/08/06 17:36:18.544 [C] [panic.go:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/06 17:36:18.544 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2019/08/06 17:36:18.544 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:82
+2019/08/06 17:36:18.544 [C] [panic.go:522]  /usr/local/go/src/runtime/signal_unix.go:390
+2019/08/06 17:36:18.544 [C] [panic.go:522]  /root/go/src/bee/blog/controllers/profile.go:69
+2019/08/06 17:36:18.544 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2019/08/06 17:36:18.544 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2019/08/06 17:36:18.544 [C] [panic.go:522]  /root/go/src/github.com/astaxie/beego/router.go:853
+2019/08/06 17:36:18.544 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2019/08/06 17:36:18.544 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2019/08/06 17:36:18.544 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2019/08/06 17:36:18.545 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2019/08/06 17:38:26.263 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:38:30.154 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  36.533624ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 17:43:20.099 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:48:40.735 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:49:17.456 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:49:32.959 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  69.787946ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/11   r:/api/v1/user/profile/get/:userId
+2019/08/06 17:49:43.051 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 228.352719ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/3   r:/api/v1/user/profile/get/:userId
+2019/08/06 17:49:56.728 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  86.896662ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/12   r:/api/v1/user/profile/get/:userId
+2019/08/06 17:50:22.212 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:50:23.781 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  67.023878ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/12   r:/api/v1/user/profile/get/:userId
+2019/08/06 17:50:40.535 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  32.415127ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/12   r:/api/v1/user/profile/get/:userId
+2019/08/06 17:52:46.612 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:52:49.860 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 452.335317ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/12   r:/api/v1/user/profile/get/:userId
+2019/08/06 17:53:02.997 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  65.359831ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/1   r:/api/v1/user/profile/get/:userId
+2019/08/06 17:53:30.021 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  56.409122ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/12   r:/api/v1/user/profile/get/:userId
+2019/08/06 17:56:45.914 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:57:23.115 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 139.522241ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 17:57:29.635 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  49.105007ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 17:57:33.473 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 105.539685ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/12   r:/api/v1/user/profile/get/:userId
+2019/08/06 17:57:41.949 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  54.651953ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/12   r:/api/v1/user/profile/get/:userId
+2019/08/06 17:59:06.442 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:59:10.673 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 352.069411ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/12   r:/api/v1/user/profile/get/:userId
+2019/08/06 17:59:42.417 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 17:59:46.234 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 158.557732ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/12   r:/api/v1/user/profile/get/:userId
+2019/08/06 18:00:31.544 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 18:00:35.392 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 134.554933ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/12   r:/api/v1/user/profile/get/:userId
+2019/08/06 18:01:43.153 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 18:04:31.233 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 18:07:20.035 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 18:13:51.744 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 18:19:22.615 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 18:19:48.639 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 18:20:49.062 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  43.648952ms|   match|[97;46m POST    [0m /api/v1/user/profile/update   r:/api/v1/user/profile/update
+2019/08/06 19:53:37.782 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 19:54:02.470 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/06 19:56:27.591 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 325.525405ms|   match|[97;44m GET     [0m /api/v1/user/profile/get/12   r:/api/v1/user/profile/get/:userId
+2019/08/06 19:57:06.915 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 196.638747ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/06 19:57:31.565 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 320.702117ms|   match|[97;46m POST    [0m /api/v1/user/profile/add   r:/api/v1/user/profile/add
+2019/08/06 19:58:00.061 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  51.625742ms|   match|[97;46m POST    [0m /api/v1/user/profile/update   r:/api/v1/user/profile/update
+2019/08/06 19:58:11.819 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   75.25379ms|   match|[97;46m POST    [0m /api/v1/user/profile/update   r:/api/v1/user/profile/update
+2019/08/06 19:58:35.033 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 306.200992ms|   match|[97;46m POST    [0m /api/v1/user/profile/update   r:/api/v1/user/profile/update
+2019/08/06 19:59:04.451 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 422.269956ms|   match|[97;46m POST    [0m /api/v1/user/profile/update/avator   r:/api/v1/user/profile/update/avator
+2019/08/06 19:59:25.692 [I] [asm_amd64.s:1337]  http server Running on http://:8000
