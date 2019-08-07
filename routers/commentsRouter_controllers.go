@@ -241,6 +241,24 @@ func init() {
             Filters: nil,
             Params: nil})
 
+    beego.GlobalControllerRouter["bee/blog/controllers:TagController"] = append(beego.GlobalControllerRouter["bee/blog/controllers:TagController"],
+        beego.ControllerComments{
+            Method: "Add",
+            Router: `/add`,
+            AllowHTTPMethods: []string{"post"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["bee/blog/controllers:TagController"] = append(beego.GlobalControllerRouter["bee/blog/controllers:TagController"],
+        beego.ControllerComments{
+            Method: "GetAllArticle",
+            Router: `/getArticle`,
+            AllowHTTPMethods: []string{"get"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
     beego.GlobalControllerRouter["bee/blog/controllers:UserController"] = append(beego.GlobalControllerRouter["bee/blog/controllers:UserController"],
         beego.ControllerComments{
             Method: "AllUser",

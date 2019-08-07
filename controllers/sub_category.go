@@ -15,9 +15,10 @@ type SubCategoryController struct {
 
 // @Title  编辑分类后保存二级分类
 // @Description 编辑分类后保存二级分类
-// @Param id formDate int true "分类的id"
+// @Param id formDate int true "一级分类的id"
 // @Param sub_id formDate int true "二级分类的id"
 // @Param name formDate string true "新二级分类名称"
+// @Param url formDate string true "新二级分类名称url"
 // @Success 200 {object} models.SubCategory
 // @Failure 400 register failed
 // @router /update [post]
@@ -27,6 +28,7 @@ func (this *SubCategoryController) Update() {
 	//接收参数 验证参数合法性
 
 	name := this.GetString("name")
+	url := this.GetString("url")
 	id, err1 := this.GetInt("id")
 	if err1 != nil {
 		this.Data["json"] = map[string]interface{}{"code": "1", "msg": err1.Error()}
@@ -57,10 +59,19 @@ func (this *SubCategoryController) Update() {
 	log.Printf("category的类型  --%T", category)
 
 	sub_category := models.SubCategory{
-		Id:       sub_id,
-		Name:     name,
-		Category: &category,
+		Id: sub_id,
 	}
+
+	if readSubCateErr := o.Read(&sub_category); readSubCateErr != nil {
+		this.Data["json"] = map[string]interface{}{"code": "5", "msg": readSubCateErr.Error()}
+		this.ServeJSON()
+		return
+	}
+
+	sub_category.Name = name
+	sub_category.Url = url
+	sub_category.Category = &category
+
 	_, UpdateErr := o.Update(&sub_category)
 	if UpdateErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "4", "msg": UpdateErr.Error()}
@@ -135,6 +146,7 @@ func (this *SubCategoryController) GetAll() {
 // @Description 新增二级分类
 // @Param id formDate int true "对应一级分类的id"
 // @Param name formDate string true "新增分类名称"
+// @Param url formDate string true "新增分类名称"
 // @Success 200 {object} models.SubCategory
 // @Failure 400 add failed
 // @router /add [post]
@@ -142,6 +154,7 @@ func (this *SubCategoryController) Add() {
 
 	o := orm.NewOrm()
 	name := this.GetString("name")
+	url := this.GetString("url")
 	id, err := this.GetInt("id")
 	if err != nil {
 		this.Data["json"] = map[string]interface{}{"code": "1", "msg": err.Error()}
@@ -160,6 +173,7 @@ func (this *SubCategoryController) Add() {
 
 	sub_category := models.SubCategory{
 		Name:     name,
+		Url:      url,
 		Category: &category,
 	}
 	_, insertErr := o.Insert(&sub_category)

@@ -30,6 +30,7 @@ type addArticle struct {
 // @Param	content	formDate string	true	"文章内容"
 // @Param	category	formDate int	true	"一级分类"
 // @Param	sub_category formDate int	true	"二级分类"
+// @Param	tag formDate str	true	"标签们 tag='1,2,3', 1 2 3分别为标签的id"
 // @Success 200 {strings} "ok"
 // @router /add [post]
 func (this *ArticleController) Add() {
@@ -85,7 +86,6 @@ func (this *ArticleController) Add() {
 		this.ServeJSON()
 		return
 	}
-	// 标签？？？
 
 	article := models.Article{
 		Title:       a.Title,
@@ -104,6 +104,41 @@ func (this *ArticleController) Add() {
 		this.Data["json"] = map[string]interface{}{"code": "7", "msg": insertErr.Error()}
 		this.ServeJSON()
 		return
+	}
+
+	// 标签？？？
+
+	// 创建多对多对象
+
+	m2m := o.QueryM2M(&article, "tag")
+
+	tag := this.GetString("tag") // 1,2,3
+	tagArr := strings.Split(tag, ",")
+
+	tagTmp := models.Tag{}
+	for _, v := range tagArr {
+
+		// 转成 int
+		intv, strconvVErr := strconv.Atoi(v)
+		if strconvVErr != nil {
+			this.Data["json"] = map[string]interface{}{"code": "9-3", "msg": strconvVErr.Error()}
+			this.ServeJSON()
+			return
+		}
+		tagTmp.Id = intv
+		if readTagTmpErr := o.Read(&tagTmp); readTagTmpErr != nil {
+			this.Data["json"] = map[string]interface{}{"code": "9-2", "msg": readTagTmpErr.Error()}
+			this.ServeJSON()
+			return
+		}
+
+		_, addErr := m2m.Add(&tagTmp)
+		if addErr != nil {
+			this.Data["json"] = map[string]interface{}{"code": "9-1", "msg": addErr.Error()}
+			this.ServeJSON()
+			return
+		}
+
 	}
 
 	// 初始化view 和 zan 数量
@@ -164,6 +199,13 @@ func (this *ArticleController) Get() {
 	// 查询文章的二级评论
 	if _, loadcommentErr := o.LoadRelated(&article, "comment"); loadcommentErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "5", "msg": loadcommentErr.Error()}
+		this.ServeJSON()
+		return
+	}
+
+	// 查询文章的标签
+	if _, loadtagErr := o.LoadRelated(&article, "tag"); loadtagErr != nil {
+		this.Data["json"] = map[string]interface{}{"code": "9", "msg": loadtagErr.Error()}
 		this.ServeJSON()
 		return
 	}

@@ -39,6 +39,7 @@ type Message struct {
 type Category struct {
 	Id          int
 	Name        string
+	Url         string
 	SubCategory []*SubCategory `orm:"reverse(many)"`
 	Article     []*Article     `orm:"reverse(many)"`
 }
@@ -47,6 +48,7 @@ type Category struct {
 type SubCategory struct {
 	Id       int
 	Name     string
+	Url      string
 	Category *Category  `orm:"rel(fk)"`
 	Article  []*Article `orm:"reverse(many)"`
 }

@@ -16,6 +16,7 @@ type CategoryController struct {
 // @Description 修改分类
 // @Param id formDate int true "分类的id"
 // @Param name formDate string true "新的分类名称"
+// @Param url formDate string true "新的分类名称"
 // @Success 200 {object} models.Category
 // @Failure 400 register failed
 // @router /update [post]
@@ -25,6 +26,7 @@ func (this *CategoryController) Update() {
 	//接收参数 验证参数合法性
 
 	name := this.GetString("name")
+	url := this.GetString("url")
 	id, err := this.GetInt("id")
 	if err != nil {
 		this.Data["json"] = map[string]interface{}{"msg": "param error"}
@@ -44,6 +46,7 @@ func (this *CategoryController) Update() {
 	}
 
 	category.Name = name
+	category.Url = url
 	_, UpdateErr := o.Update(&category)
 	if UpdateErr != nil {
 		this.Data["json"] = map[string]interface{}{"msg": "update fail"}
@@ -117,6 +120,7 @@ func (this *CategoryController) GetAll() {
 // @Title  新增分类
 // @Description 新增分类
 // @Param name formDate string true "新增分类名称"
+// @Param url formDate string true "新增分类名称"
 // @Success 200 {object} models.Category
 // @Failure 400 add failed
 // @router /add [post]
@@ -124,9 +128,10 @@ func (this *CategoryController) Add() {
 
 	o := orm.NewOrm()
 	name := this.GetString("name")
-
+	url := this.GetString("url")
 	category := models.Category{
 		Name: name,
+		Url:  url,
 	}
 	_, err := o.Insert(&category)
 	if err != nil {

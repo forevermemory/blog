@@ -99,7 +99,7 @@ func (this *ProfileController) Add() {
 // @Title  查询一个
 // @Description 查询一个
 // @Param	userId path int true "用户id"
-// @Success 200 {strings} "ok"
+// @Success 200 {object} models.Profile
 // @router /profile/get/:userId [get]
 func (this *ProfileController) Get() {
 	o := orm.NewOrm()

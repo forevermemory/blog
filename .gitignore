@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 *.tmp
+swagger/
+logs/
+log/
+*.jpg
+*.png
 
 
 
