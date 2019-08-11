@@ -6,6 +6,7 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/gomodule/redigo/redis"
+	"log"
 	"strconv"
 	"strings"
 )
@@ -95,7 +96,9 @@ func (this *ArticleController) Add() {
 		SubCategory: &sub_category,
 	}
 
-	conn, _ := utils.GetDefaultRedisConn()
+	pool := utils.GetDefaultRedisPool()
+
+	conn := pool.Get()
 	defer conn.Close()
 
 	//插入数据库
@@ -142,7 +145,7 @@ func (this *ArticleController) Add() {
 	}
 
 	// 初始化view 和 zan 数量
-	if _, doErr := conn.Do("hmset", "article_"+strconv.Itoa(article.Id), "view", "0", "zan", "0"); doErr != nil {
+	if _, doErr := conn.Do("hmset", "article_"+strconv.Itoa(article.Id), "view", "1", "zan", "0"); doErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "8", "msg": doErr.Error()}
 		this.ServeJSON()
 		return
@@ -159,14 +162,11 @@ func (this *ArticleController) Add() {
 // @Success 200 {object} models.Article
 // @router /get/:id [get]
 func (this *ArticleController) Get() {
-	conn, cacheError := utils.GetDefaultRedisConn()
-	defer conn.Close()
 
-	if cacheError != nil {
-		this.Data["json"] = map[string]interface{}{"code": "1", "msg": cacheError.Error()}
-		this.ServeJSON()
-		return
-	}
+	pool := utils.GetDefaultRedisPool()
+
+	conn := pool.Get()
+	defer conn.Close()
 
 	o := orm.NewOrm()
 	//接收参数 验证参数合法性
@@ -182,22 +182,26 @@ func (this *ArticleController) Get() {
 	}
 
 	// 查询文章基本信息
-	article := models.Article{Id: newId}
-	if readErr := o.Read(&article); readErr != nil {
+	article := models.Article{}
+
+	readErr := o.QueryTable("article").Filter("id__exact", newId).RelatedSel().One(&article)
+	if readErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "3", "msg": readErr.Error()}
 		this.ServeJSON()
 		return
 	}
 
 	// 查询文章的一级评论
-	if _, loadErr := o.LoadRelated(&article, "SubComment"); loadErr != nil {
+	commentNum, loadErr := o.LoadRelated(&article, "SubComment")
+	if loadErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "4", "msg": loadErr.Error()}
 		this.ServeJSON()
 		return
 	}
 
 	// 查询文章的二级评论
-	if _, loadcommentErr := o.LoadRelated(&article, "comment"); loadcommentErr != nil {
+	subCommentNum, loadcommentErr := o.LoadRelated(&article, "comment")
+	if loadcommentErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "5", "msg": loadcommentErr.Error()}
 		this.ServeJSON()
 		return
@@ -240,6 +244,11 @@ func (this *ArticleController) Get() {
 
 	// 设置阅读数量
 	article.View = view
+	// 设置 文章的 总评论数量
+	article.Pinglun = subCommentNum + commentNum
+
+	// 方案一 查询一篇文章以后更新到mysql
+	o.Update(&article)
 
 	this.Data["json"] = &article
 	this.ServeJSON()
@@ -252,8 +261,8 @@ func (this *ArticleController) Get() {
 // @Param	title query string false "标题"
 // @Param	tags query string false "标签"
 // @Param	authorId query string false "作者"
-// @Param	categoryId query string false "分类"
-// @Param	subCategoryId query string false "二级分类"
+// @Param	categoryName query string false "分类"
+// @Param	subCategoryName query string false "二级分类"
 // @Success 200 {object} models.Article
 // @router /getall [get]
 func (this *ArticleController) GetList() {
@@ -261,6 +270,10 @@ func (this *ArticleController) GetList() {
 	var (
 		page int = 1
 	)
+	// pool := utils.GetDefaultRedisPool()
+
+	// conn := pool.Get()
+	// defer conn.Close()
 
 	// 查询
 	o := orm.NewOrm()
@@ -286,29 +299,18 @@ func (this *ArticleController) GetList() {
 	}
 
 	// 分类 id
-	strCategoryId := this.GetString("categoryId")
-	if utils.TrimString(strCategoryId) > 0 {
-		categoryId, categoryErr := strconv.Atoi(strCategoryId)
-		if categoryErr != nil {
-			this.Data["json"] = map[string]interface{}{"code": "2", "msg": categoryErr.Error()}
-			this.ServeJSON()
-			return
-		}
-		qs = qs.Filter("category__id__exact", categoryId)
+	categoryName := this.GetString("categoryName")
+	log.Println(categoryName)
+	if utils.TrimString(categoryName) > 0 {
+		qs = qs.Filter("Category__url__exact", categoryName)
 
 	}
 
 	// 二级分类 id
 
-	strSubCategoryId := this.GetString("subCategoryId")
-	if utils.TrimString(strSubCategoryId) > 0 {
-		subCategoryId, subCategoryErr := strconv.Atoi(strSubCategoryId)
-		if subCategoryErr != nil {
-			this.Data["json"] = map[string]interface{}{"code": "3", "msg": subCategoryErr.Error()}
-			this.ServeJSON()
-			return
-		}
-		qs = qs.Filter("subCategory__id__exact", subCategoryId)
+	subCategoryName := this.GetString("subCategoryName")
+	if utils.TrimString(subCategoryName) > 0 {
+		qs = qs.Filter("SubCategory__url__exact", subCategoryName)
 
 	}
 
@@ -335,13 +337,31 @@ func (this *ArticleController) GetList() {
 	// TODO
 
 	var articles []models.Article
-	_, allErr := qs.All(&articles)
+	_, allErr := qs.RelatedSel().All(&articles)
 	if allErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "5", "msg": allErr.Error()}
 		this.ServeJSON()
 		return
 	}
 
+	// 方案二
+	// // 增添阅读数量
+	// var articlesTemp []models.Article
+	// for _, v := range articles {
+
+	// 	// 获取 view 的最新值
+
+	// 	view, viewErr := redis.Int(conn.Do("hget", "article_"+strconv.Itoa(v.Id), "view"))
+	// 	if viewErr != nil {
+	// 		this.Data["json"] = map[string]interface{}{"code": "8", "msg": viewErr.Error()}
+	// 		this.ServeJSON()
+	// 		return
+	// 	}
+	// 	v.View = view
+	// 	articlesTemp = append(articlesTemp, v)
+	// }
+
+	// this.Data["json"] = &articlesTemp
 	this.Data["json"] = &articles
 	this.ServeJSON()
 }
@@ -455,4 +475,34 @@ func (this *ArticleController) Edit() {
 	this.Data["json"] = &article
 	this.ServeJSON()
 	return
+}
+
+// @Title  接受副文本编辑器的图像
+// @Description 接受副文本编辑器的图像
+// @Param	content formDate string true "文章内容"
+// @Success 200 {object} models.Article
+// @router /image [post]
+func (this *ArticleController) AcceptImage() {
+
+	f, h, getFileErr := this.GetFile("content")
+	// 没有传文件 发生异常
+	if getFileErr != nil {
+		//invalid memory address or nil pointer dereference
+		this.Data["json"] = map[string]interface{}{"code": "1", "msg": "请上传图片"}
+		this.ServeJSON()
+		return
+	}
+	defer f.Close()
+
+	path := "static/content/" + h.Filename
+	if saveFileErr := this.SaveToFile("content", path); saveFileErr != nil {
+		this.Data["json"] = map[string]interface{}{"code": "4", "msg": getFileErr.Error()}
+		this.ServeJSON()
+		return
+	}
+	// 保存位置在 static/upload, 没有文件夹要先创建
+	this.Data["json"] = map[string]interface{}{"code": "4", "msg": "ok"}
+	this.ServeJSON()
+	return
+
 }

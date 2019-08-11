@@ -1,10 +1,14 @@
 package controllers
 
 import (
+	"bee/blog/models"
 	"bee/blog/utils"
+	"encoding/json"
 	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/orm"
 	"github.com/gomodule/redigo/redis"
 	"strconv"
+	"time"
 )
 
 type MessageController struct {
@@ -15,27 +19,61 @@ func init() {
 
 }
 
+type message struct {
+	Content string
+	UserId  string
+}
+
 // @Title  留言板添加信息
 // @Description 留言板添加信息
-// @Param	content	formDate string	true	"留言板添加信息"
+// @Param	content	body string	true	"留言板添加信息"
+// @Param	userId body string	false	"留言板添加信息"
 // @Success 200 {strings} "ok"
 // @router /add [post]
 func (this *MessageController) Add() {
-	conn, cacheError := utils.GetDefaultRedisConn()
-
+	pool := utils.GetDefaultRedisPool()
+	conn := pool.Get()
 	defer conn.Close()
-	if cacheError != nil {
-		this.Data["json"] = map[string]interface{}{"code": "1", "msg": cacheError.Error()}
+
+	var mess message
+	if unmarshalErr := json.Unmarshal(this.Ctx.Input.RequestBody, &mess); unmarshalErr != nil {
+		this.Data["json"] = map[string]interface{}{"code": "1", "msg": unmarshalErr.Error()}
 		this.ServeJSON()
 		return
 	}
 
-	content := this.GetString("content")
+	var newContent string
+	now := time.Now().String()
+
+	if mess.UserId != "" {
+		intId, strconvErr := strconv.Atoi(mess.UserId)
+		if strconvErr != nil {
+			this.Data["json"] = map[string]interface{}{"code": "2", "msg": strconvErr.Error()}
+			this.ServeJSON()
+			return
+		}
+		// 存入mysql
+		user := models.User{
+			Id: intId,
+		}
+		o := orm.NewOrm()
+		if readUserErr := o.Read(&user); readUserErr != nil {
+			this.Data["json"] = map[string]interface{}{"code": "5", "msg": readUserErr.Error()}
+			this.ServeJSON()
+			return
+		}
+
+		newContent = mess.Content + "__" + user.Username + "__" + mess.UserId + "__" + now
+
+	} else {
+		newContent = mess.Content + "__" + now
+	}
 
 	// _, doErr := conn.Do("", args)
-	_, err := conn.Do("lpush", "message", content)
+
+	_, err := conn.Do("lpush", "message", newContent)
 	if err != nil {
-		this.Data["json"] = map[string]interface{}{"code": "2", "msg": err.Error()}
+		this.Data["json"] = map[string]interface{}{"code": "4", "msg": err.Error()}
 		this.ServeJSON()
 		return
 	}
@@ -53,14 +91,10 @@ func (this *MessageController) Add() {
 // @router /get [get]
 func (this *MessageController) GetMessage() {
 
-	conn, cacheError := utils.GetDefaultRedisConn()
+	pool := utils.GetDefaultRedisPool()
+	conn := pool.Get()
 
 	defer conn.Close()
-	if cacheError != nil {
-		this.Data["json"] = map[string]interface{}{"code": "1", "msg": cacheError.Error()}
-		this.ServeJSON()
-		return
-	}
 
 	strPage := this.GetString("page", "1")
 	page, pageErr := strconv.Atoi(strPage)
@@ -108,13 +142,10 @@ func (this *MessageController) GetMessage() {
 // @router /delete [get]
 func (this *MessageController) DeleteByContent() {
 
-	conn, cacheError := utils.GetDefaultRedisConn()
+	pool := utils.GetDefaultRedisPool()
+	conn := pool.Get()
+
 	defer conn.Close()
-	if cacheError != nil {
-		this.Data["json"] = map[string]interface{}{"code": "1", "msg": cacheError.Error()}
-		this.ServeJSON()
-		return
-	}
 
 	content := this.GetString("content")
 

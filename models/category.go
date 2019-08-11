@@ -32,6 +32,7 @@ func regisertModels() {
 //留言板
 type Message struct {
 	Id      int
+	User    *User     `orm:"rel(fk)"`
 	Date    time.Time `orm:"auto_now_add;type(datetime)"`
 	Content string    `orm:""  description:"xss  cross-site scriptong 跨站脚本漏洞"`
 }
@@ -61,6 +62,7 @@ type Article struct {
 	Image      string    `orm:"null"`
 	View       int       `orm:"null;default(0)"  description:"阅读数量"`
 	Zan        int       `orm: "null;default(0)"  description:"点赞数量"`
+	Pinglun    int64     `orm: "null;default(0)"  description:"点赞数量"`
 	CreateDate time.Time `orm:"auto_now_add;type(datetime)"`
 	UpdateDate time.Time `orm:"auto_now;type(datetime)"`
 

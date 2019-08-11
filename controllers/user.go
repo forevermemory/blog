@@ -6,6 +6,8 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"log"
+	"strconv"
+	"strings"
 )
 
 // Operations about Users
@@ -57,6 +59,45 @@ func (this *UserController) AllUser() {
 		this.ServeJSON()
 		return
 	}
+	this.Data["json"] = &users
+	this.ServeJSON()
+	return
+
+}
+
+// @Title  用户列表2
+// @Description 用户列表 1,2,3
+// @Param	ids query string true	 "1,2"
+// @Success 200 {object} models.User
+// @Failure 400 register failed
+// @router /getList [get]
+func (this *UserController) UserList() {
+
+	o := orm.NewOrm()
+
+	var users []models.User
+	ids := this.GetString("ids")
+	idsArr := strings.Split(ids, ",")
+
+	userTmp := models.User{}
+	for _, v := range idsArr {
+		// 转成 int
+		intv, strconvVErr := strconv.Atoi(v)
+		if strconvVErr != nil {
+			this.Data["json"] = map[string]interface{}{"code": "2", "msg": strconvVErr.Error()}
+			this.ServeJSON()
+			return
+		}
+		userTmp.Id = intv
+		if readUserTmpErr := o.Read(&userTmp); readUserTmpErr != nil {
+			this.Data["json"] = map[string]interface{}{"code": "3", "msg": readUserTmpErr.Error()}
+			this.ServeJSON()
+			return
+		}
+		users = append(users, userTmp)
+
+	}
+
 	this.Data["json"] = &users
 	this.ServeJSON()
 	return
@@ -160,16 +201,19 @@ func (this *UserController) Login() {
 	}
 
 	// 将token 存入缓存
-	conn, _ := utils.GetDefaultRedisConn()
+	pool := utils.GetDefaultRedisPool()
+	conn := pool.Get()
+
 	defer conn.Close()
+
 	if _, doErr := conn.Do("set", user.Token, user.Token); doErr != nil {
-		this.Data["json"] = map[string]interface{}{"code": "2", "msg": "add fail"}
+		this.Data["json"] = map[string]interface{}{"code": "2", "msg": doErr.Error()}
 		this.ServeJSON()
 		return
 	}
 
 	if _, doErr2 := conn.Do("EXPIRE", user.Token, 60*60); doErr2 != nil {
-		this.Data["json"] = map[string]interface{}{"code": "3", "msg": "add fail"}
+		this.Data["json"] = map[string]interface{}{"code": "3", "msg": doErr2.Error()}
 		this.ServeJSON()
 		return
 	}

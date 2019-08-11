@@ -21,6 +21,7 @@ type User struct {
 	Date          time.Time `orm:"auto_now_add;type(datetime)"`
 
 	Profile    *Profile      `orm:"reverse(one)"`
+	Message    []*Message    `orm:"reverse(many)"`
 	Article    []*Article    `orm:"reverse(many)"`
 	Comment    []*Comment    `orm:"reverse(many)"`
 	SubComment []*SubComment `orm:"reverse(many)"`

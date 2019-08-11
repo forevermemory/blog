@@ -52,6 +52,15 @@ func init() {
             Filters: nil,
             Params: nil})
 
+    beego.GlobalControllerRouter["bee/blog/controllers:ArticleController"] = append(beego.GlobalControllerRouter["bee/blog/controllers:ArticleController"],
+        beego.ControllerComments{
+            Method: "AcceptImage",
+            Router: `/image`,
+            AllowHTTPMethods: []string{"post"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
     beego.GlobalControllerRouter["bee/blog/controllers:CategoryController"] = append(beego.GlobalControllerRouter["bee/blog/controllers:CategoryController"],
         beego.ControllerComments{
             Method: "Add",
@@ -259,10 +268,28 @@ func init() {
             Filters: nil,
             Params: nil})
 
+    beego.GlobalControllerRouter["bee/blog/controllers:TagController"] = append(beego.GlobalControllerRouter["bee/blog/controllers:TagController"],
+        beego.ControllerComments{
+            Method: "GetAll",
+            Router: `/getall`,
+            AllowHTTPMethods: []string{"get"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
     beego.GlobalControllerRouter["bee/blog/controllers:UserController"] = append(beego.GlobalControllerRouter["bee/blog/controllers:UserController"],
         beego.ControllerComments{
             Method: "AllUser",
             Router: `/all`,
+            AllowHTTPMethods: []string{"get"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["bee/blog/controllers:UserController"] = append(beego.GlobalControllerRouter["bee/blog/controllers:UserController"],
+        beego.ControllerComments{
+            Method: "UserList",
+            Router: `/getList`,
             AllowHTTPMethods: []string{"get"},
             MethodParams: param.Make(),
             Filters: nil,

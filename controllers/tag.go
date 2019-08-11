@@ -79,3 +79,25 @@ func (this *TagController) GetAllArticle() {
 	this.ServeJSON()
 	return
 }
+
+// @Title  查询所有标签
+// @Description 查询所有标签
+// @Success 200 {object} models.Tag
+// @Failure 400 register failed
+// @router /getall [get]
+func (this *TagController) GetAll() {
+
+	o := orm.NewOrm()
+	var tags []models.Tag
+
+	if _, err := o.QueryTable("tag").All(&tags); err != nil {
+		this.Data["json"] = map[string]interface{}{"code": "2", "msg": err.Error()}
+		this.ServeJSON()
+		return
+	}
+
+	this.Data["json"] = &tags
+	this.ServeJSON()
+	return
+
+}

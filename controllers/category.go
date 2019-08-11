@@ -82,12 +82,14 @@ func (this *CategoryController) Get() {
 
 	category := models.Category{}
 
-	readErr := o.QueryTable("category").RelatedSel().Filter("id__exact", newId).One(&category)
+	readErr := o.QueryTable("category").Filter("id__exact", newId).One(&category)
 	if readErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "2", "msg": readErr.Error()}
 		this.ServeJSON()
 		return
 	}
+
+	o.LoadRelated(&category, "SubCategory")
 
 	this.Data["json"] = &category
 	this.ServeJSON()
@@ -104,14 +106,21 @@ func (this *CategoryController) GetAll() {
 	o := orm.NewOrm()
 
 	var categories []models.Category
-	_, err := o.QueryTable("category").RelatedSel().All(&categories)
+	_, err := o.QueryTable("category").All(&categories)
 	if err != nil {
 		this.Data["json"] = map[string]interface{}{"code": "1", "msg": err.Error()}
 		this.ServeJSON()
 		return
 	}
 
-	this.Data["json"] = &categories
+	var categories2 []models.Category
+	for _, cate := range categories {
+
+		o.LoadRelated(&cate, "SubCategory")
+		categories2 = append(categories2, cate)
+	}
+
+	this.Data["json"] = &categories2
 	this.ServeJSON()
 	return
 
