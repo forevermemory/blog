@@ -3,6 +3,7 @@ package controllers
 import (
 	"bee/blog/models"
 	"bee/blog/utils"
+	"encoding/json"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"log"
@@ -13,12 +14,6 @@ import (
 // Operations about Users
 type UserController struct {
 	beego.Controller
-}
-
-type userRegister struct {
-	Name     string `form:"username"`
-	Password string `form:"password"`
-	Email    string `form:"email"`
 }
 
 // @Title  检查用户名是否存在
@@ -104,11 +99,17 @@ func (this *UserController) UserList() {
 
 }
 
+type userRegister struct {
+	Username string `form:"username"`
+	Password string `form:"password"`
+	Email    string `form:"email"`
+}
+
 // @Title  注册
 // @Description 注册
-// @Param	username formDate string true	 "用户名"
-// @Param	password formDate string true	 "密码"
-// @Param	email formDate string true "邮箱"
+// @Param	username body string true "用户名"
+// @Param	password body string true "密码"
+// @Param	email body string true "邮箱"
 // @Success 200 {object} models.User
 // @Failure 400 register failed
 // @router /registe [post]
@@ -120,14 +121,15 @@ func (this *UserController) Register() {
 
 	//参数长度由前端控制。。。
 	userReg := userRegister{}
-	if err := this.ParseForm(&userReg); err != nil {
-		this.Data["json"] = map[string]interface{}{"code": "1", "msg": "param error"}
+
+	if unmarshalErr := json.Unmarshal(this.Ctx.Input.RequestBody, &userReg); unmarshalErr != nil {
+		this.Data["json"] = map[string]interface{}{"code": "1", "msg": unmarshalErr.Error()}
 		this.ServeJSON()
 		return
 	}
 
 	//参数校验
-	usernameIsValid := utils.CheckNameIsFull(userReg.Name)
+	usernameIsValid := utils.CheckNameIsFull(userReg.Username)
 	if !usernameIsValid {
 		this.Data["json"] = map[string]interface{}{"code": "2", "msg": "username too short"}
 		this.ServeJSON()
@@ -151,7 +153,7 @@ func (this *UserController) Register() {
 	//加密密码 和生成token
 	var porfile models.Profile
 	user := models.User{
-		Username:      userReg.Name,
+		Username:      userReg.Username,
 		Password:      userReg.Password,
 		Email:         userReg.Email,
 		Token:         utils.GenerateToken(),
@@ -173,28 +175,48 @@ func (this *UserController) Register() {
 
 }
 
+type userLogin struct {
+	Username string
+	Password string
+}
+
 // @Title  登录
 // @Description 登录
-// @Param	username formDate string true "用户名"
-// @Param	password formDate string true "密码"
+// @Param	username body string true "用户名"
+// @Param	password body string true "密码"
 // @Success 200 {object} models.User
 // @Failure 400 login failed
 // @router /login [post]
 func (this *UserController) Login() {
 
 	o := orm.NewOrm()
-	username := this.GetString("username")
-	password := this.GetString("password")
-	log.Println(username)
-	log.Println(password)
 
-	user := models.User{Username: username}
-	o.QueryTable("user").Filter("username__exact", username).One(&user)
+	// username := this.GetString("username")
+	// password := this.GetString("password")
+	// log.Println(username)
+	// log.Println(password)
 
-	isValid := user.PasswordCheck(password)
+	var userlogin userLogin
+	if unmarshalErr := json.Unmarshal(this.Ctx.Input.RequestBody, &userlogin); unmarshalErr != nil {
+		this.Data["json"] = map[string]interface{}{"code": "1", "msg": unmarshalErr.Error()}
+		this.ServeJSON()
+		return
+	}
+
+	log.Println(userlogin)
+
+	user := models.User{Username: userlogin.Username}
+	if oneErr := o.QueryTable("user").Filter("username__exact", userlogin.Username).RelatedSel().One(&user); oneErr != nil {
+		// 密码错误
+		this.Data["json"] = map[string]interface{}{"code": "5", "message": "user is not exist"}
+		this.ServeJSON()
+		return
+	}
+
+	isValid := user.PasswordCheck(userlogin.Password)
 	if !isValid {
 		// 密码错误
-		this.Data["json"] = map[string]interface{}{"code": "1", "message": "password is invaild"}
+		this.Data["json"] = map[string]interface{}{"code": "4", "message": "password is invaild"}
 		this.ServeJSON()
 		return
 
@@ -212,13 +234,18 @@ func (this *UserController) Login() {
 		return
 	}
 
-	if _, doErr2 := conn.Do("EXPIRE", user.Token, 60*60); doErr2 != nil {
-		this.Data["json"] = map[string]interface{}{"code": "3", "msg": doErr2.Error()}
-		this.ServeJSON()
-		return
-	}
+	// if _, doErr2 := conn.Do("EXPIRE", user.Token, 60*60); doErr2 != nil {
+	// 	this.Data["json"] = map[string]interface{}{"code": "3", "msg": doErr2.Error()}
+	// 	this.ServeJSON()
+	// 	return
+	// }
 
 	//设置过期时间
+	// if _, relErr := o.LoadRelated(&user, "Profile"); relErr != nil {
+	// 	this.Data["json"] = map[string]interface{}{"code": "5", "msg": relErr.Error()}
+	// 	this.ServeJSON()
+	// 	return
+	// }
 
 	this.Data["json"] = &user
 	this.ServeJSON()

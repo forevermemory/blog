@@ -39,7 +39,7 @@ func CheckNameIsFull(value string) bool {
 		return false
 	}
 	trimValue := strings.TrimSpace(value)
-	if len(trimValue) < 3 {
+	if len(trimValue) < 2 {
 		return false
 	}
 	return true

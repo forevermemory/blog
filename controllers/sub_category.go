@@ -86,7 +86,7 @@ func (this *SubCategoryController) Update() {
 
 // @Title  查询一个
 // @Description 根据id查询分类
-// @Param id path string true "二级分类的id"
+// @Param id path string true "1级分类的id"
 // @Success 200 {object} models.SubCategory
 // @Failure 400 register failed
 // @router /get/:id [get]
@@ -121,15 +121,33 @@ func (this *SubCategoryController) Get() {
 
 // @Title  查询所有二级分类
 // @Description 查询所有二级分类
+// @Param id query string true "1级分类的id"
 // @Success 200 {object} models.SubCategory
 // @Failure 400 register failed
 // @router /getall [get]
 func (this *SubCategoryController) GetAll() {
 
 	o := orm.NewOrm()
+	//接收参数 验证参数合法性
+	id := this.GetString("id")
+	// log.Printf("id的类型为%T", id) //string
+
+	newId, strconverr := strconv.Atoi(id)
+
+	if strconverr != nil {
+		this.Data["json"] = map[string]interface{}{"code": "2", "msg": strconverr.Error()}
+		this.ServeJSON()
+		return
+	}
+	category := models.Category{Id: newId}
+	if readcategoryerr := o.Read(&category); readcategoryerr != nil {
+		this.Data["json"] = map[string]interface{}{"code": "3", "msg": readcategoryerr.Error()}
+		this.ServeJSON()
+		return
+	}
 
 	var sub_categories []models.SubCategory
-	_, err := o.QueryTable("sub_category").RelatedSel().All(&sub_categories)
+	_, err := o.QueryTable("sub_category").Filter("category__exact", category).All(&sub_categories)
 	if err != nil {
 		this.Data["json"] = map[string]interface{}{"code": "1", "msg": err.Error()}
 		this.ServeJSON()

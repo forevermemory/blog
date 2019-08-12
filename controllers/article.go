@@ -3,6 +3,7 @@ package controllers
 import (
 	"bee/blog/models"
 	"bee/blog/utils"
+	"encoding/json"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/gomodule/redigo/redis"
@@ -17,21 +18,22 @@ type ArticleController struct {
 }
 
 type addArticle struct {
-	UserId      int    `form:"user_id"`
+	UserId      string `form:"userId"`
 	Title       string `form:"title"`
 	Content     string `form:"content"`
-	Category    int    `form:"category"`
-	SubCategory int    `form:"sub_category"`
+	Category    string `form:"category"`
+	SubCategory string `form:"subCategory"`
+	Tag         string `form:"tag"`
 }
 
 // @Title  新增文章
 // @Description 新增文章
-// @Param	user_id	formDate  int true	"当前用户id"
-// @Param	title	formDate	string true	 "文章title"
-// @Param	content	formDate string	true	"文章内容"
-// @Param	category	formDate int	true	"一级分类"
-// @Param	sub_category formDate int	true	"二级分类"
-// @Param	tag formDate str	true	"标签们 tag='1,2,3', 1 2 3分别为标签的id"
+// @Param	userId	body  string true	"当前用户id"
+// @Param	title	body	string true	 "文章title"
+// @Param	content	body string	true	"文章内容"
+// @Param	category	body string	true	"一级分类"
+// @Param	subCategory body string	true	"二级分类"
+// @Param	tag body str	false	"标签们 tag='1,2,3', 1 2 3分别为标签的id"
 // @Success 200 {strings} "ok"
 // @router /add [post]
 func (this *ArticleController) Add() {
@@ -39,7 +41,7 @@ func (this *ArticleController) Add() {
 	o := orm.NewOrm()
 
 	var a addArticle
-	if errParseForm := this.ParseForm(&a); errParseForm != nil {
+	if errParseForm := json.Unmarshal(this.Ctx.Input.RequestBody, &a); errParseForm != nil {
 		this.Data["json"] = map[string]interface{}{"code": "1", "msg": errParseForm.Error()}
 		this.ServeJSON()
 		return
@@ -59,8 +61,10 @@ func (this *ArticleController) Add() {
 
 	//关联关系处理
 	// author
+	intId, _ := strconv.Atoi(a.UserId)
+
 	author := models.User{
-		Id: a.UserId,
+		Id: intId,
 	}
 	if errauthor := o.Read(&author); errauthor != nil {
 		this.Data["json"] = map[string]interface{}{"code": "4", "msg": errauthor.Error()}
@@ -69,8 +73,9 @@ func (this *ArticleController) Add() {
 	}
 
 	//category
+	categoryId, _ := strconv.Atoi(a.Category)
 	category := models.Category{
-		Id: a.Category,
+		Id: categoryId,
 	}
 	if errcategory := o.Read(&category); errcategory != nil {
 		this.Data["json"] = map[string]interface{}{"code": "5", "msg": errcategory.Error()}
@@ -79,8 +84,9 @@ func (this *ArticleController) Add() {
 	}
 
 	//sub_category
+	subCategoryId, _ := strconv.Atoi(a.SubCategory)
 	sub_category := models.SubCategory{
-		Id: a.SubCategory,
+		Id: subCategoryId,
 	}
 	if errsub_category := o.Read(&sub_category); errsub_category != nil {
 		this.Data["json"] = map[string]interface{}{"code": "6", "msg": errsub_category.Error()}
@@ -115,7 +121,7 @@ func (this *ArticleController) Add() {
 
 	m2m := o.QueryM2M(&article, "tag")
 
-	tag := this.GetString("tag") // 1,2,3
+	tag := a.Tag // 1,2,3
 	tagArr := strings.Split(tag, ",")
 
 	tagTmp := models.Tag{}
@@ -227,20 +233,13 @@ func (this *ArticleController) Get() {
 		this.ServeJSON()
 		return
 	}
-
 	// 获取 view 的最新值
-
 	view, viewErr := redis.Int(conn.Do("hget", "article_"+id, "view"))
 	if viewErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "8", "msg": viewErr.Error()}
 		this.ServeJSON()
 		return
 	}
-
-	// log.Printf("v的类型为 %T", v) //v的类型为 []uint8
-	// intvalue, _ := strconv.Atoi(string(v.([]byte))) //int
-	// log.Printf("value:%T", intvalue)
-	//HINCRBY key field 1
 
 	// 设置阅读数量
 	article.View = view

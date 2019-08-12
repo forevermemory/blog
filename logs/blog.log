@@ -2630,3 +2630,1015 @@
 2019/08/11 20:52:59.404 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 146.250886ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
 2019/08/11 20:52:59.543 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 126.133662ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
 2019/08/11 20:53:08.729 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  22.600565ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:06:34.793 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 09:06:39.144 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 107.826704ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:06:39.191 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 155.501575ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:06:39.240 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 145.946592ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:06:50.679 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  48.359319ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 09:06:53.965 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  16.010117ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:06:57.669 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  51.752362ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 09:06:58.693 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  18.192771ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 09:06:59.622 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  35.328024ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 09:07:00.451 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  19.599138ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 09:07:02.217 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  14.550839ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 09:07:04.191 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.841674ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 09:07:16.514 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   39.58409ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:08:14.460 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  86.574462ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:08:14.470 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  15.018883ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:08:14.487 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 114.776003ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:08:17.185 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|     343.47ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 09:08:19.438 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 162.178376ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:08:41.015 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 154.627227ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:08:41.126 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 404.481631ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:08:41.280 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 559.170765ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:08:57.453 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  31.474967ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:08:57.508 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 126.837032ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:08:57.519 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 137.827343ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:09:00.039 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 807.694398ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/12 09:09:02.070 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  47.366621ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:09:03.239 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  78.138377ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 09:09:10.044 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  278.33328ms|   match|[97;44m GET     [0m /api/v1/article/get/3   r:/api/v1/article/get/:id
+2019/08/12 09:09:16.576 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 261.203048ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 09:09:18.967 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 251.616017ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/12 09:09:29.386 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  92.038306ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:13:00.754 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  71.116983ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:13:00.760 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 143.718164ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:13:00.771 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 155.261004ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:13:42.606 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  58.180065ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:13:42.619 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  74.129257ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:13:42.660 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  18.353077ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:13:52.441 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  211.15352ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/12 09:13:52.536 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  81.324437ms|   match|[97;44m GET     [0m /api/v1/user/getList/   r:/api/v1/user/getList
+2019/08/12 09:13:56.670 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  21.828163ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:13:56.685 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  94.754928ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:13:56.698 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 108.472076ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:14:00.657 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 181.799917ms|   match|[97;44m GET     [0m /api/v1/article/get/9   r:/api/v1/article/get/:id
+2019/08/12 09:14:43.063 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 101.132657ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:14:43.072 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 110.105503ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:14:43.167 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 147.892082ms|   match|[97;44m GET     [0m /api/v1/article/get/9   r:/api/v1/article/get/:id
+2019/08/12 09:14:54.937 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  64.743466ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:14:54.997 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  53.412491ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:14:55.007 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 136.102063ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:15:41.201 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  63.691704ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:15:41.215 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  76.350062ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:15:41.267 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  15.545723ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:15:44.071 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 578.099752ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/12 09:15:44.172 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  84.744624ms|   match|[97;44m GET     [0m /api/v1/user/getList/   r:/api/v1/user/getList
+2019/08/12 09:15:59.872 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  15.616183ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:15:59.878 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    98.0162ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:15:59.880 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  99.824284ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:16:01.757 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 424.763384ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/12 09:16:30.354 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 180.439048ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:16:30.407 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 293.977963ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:16:30.423 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 311.258142ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:40:53.842 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  20.935606ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:40:53.866 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  94.880638ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:40:53.903 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  85.916372ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:40:59.350 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  13.329084ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:40:59.385 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  50.061931ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:40:59.386 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  76.823798ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:58:58.879 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  76.449069ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:58:58.930 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 152.179258ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:59:08.113 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 9.310420178s|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 09:59:39.013 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  65.173241ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 09:59:39.145 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  27.855972ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 09:59:39.190 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  75.269674ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:07:26.608 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  14.012184ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:07:26.615 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  73.633454ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:07:26.637 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  44.527155ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:07:36.297 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  97.257264ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:07:36.298 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  25.325389ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:07:36.332 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  59.884013ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:08:12.895 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  19.520029ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:08:12.932 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  57.855198ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:08:12.932 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  110.49666ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:10:50.704 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 835.090918ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:10:52.201 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 2.334960629s|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:10:53.308 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 3.522145897s|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:11:16.983 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 148.395131ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:11:16.987 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 154.540261ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:11:17.020 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 306.781483ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:11:57.191 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 341.022106ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:11:57.209 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 360.322378ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:11:57.227 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 535.283124ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:17:42.571 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  82.586069ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:17:42.578 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  16.917717ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:17:42.665 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 103.776937ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:25:05.489 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 10:25:10.760 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 143.394911ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:25:10.832 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 378.520059ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:25:10.833 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  214.43225ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:25:28.075 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     41.167µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 10:25:28.576 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 484.753448ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 10:26:54.034 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   80.36066ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:26:54.133 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  78.057227ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:26:54.560 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 505.455103ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:27:05.095 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     38.947µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 10:27:05.158 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  51.494021ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 10:27:11.151 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     34.361µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 10:27:11.606 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 448.277799ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 10:30:50.511 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 10:34:01.556 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 110.801724ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:34:01.626 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  35.024121ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:34:01.632 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  54.401212ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:34:28.879 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  112.42017ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:34:28.940 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  18.110128ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:34:28.957 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  54.434598ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:38:35.586 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 166.064405ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:38:35.614 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  74.428427ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:38:35.627 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   78.81575ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:38:40.009 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  82.270671ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:38:40.022 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   15.76017ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:38:40.103 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   98.36579ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:39:54.510 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 224.636637ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:39:54.571 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 287.130734ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:39:54.572 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 387.709762ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:40:32.267 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  23.750463ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:40:32.316 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 175.764417ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:40:32.326 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  88.752869ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:40:53.714 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   42.02755ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:40:53.803 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 199.533686ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:40:53.824 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 152.648659ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:41:12.326 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  76.462752ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:41:12.334 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  14.208076ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:41:12.390 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  71.253363ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:41:21.224 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  73.719876ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:41:21.271 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  34.839534ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:41:21.466 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 229.521674ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:42:14.919 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  12.998664ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:42:14.934 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  90.130024ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:42:14.971 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  65.982289ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:42:38.533 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 108.795105ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:42:38.546 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 110.548419ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:42:38.549 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  14.019438ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:43:02.572 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  67.026441ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:43:02.578 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  74.014131ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:43:02.681 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  30.575694ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:43:19.518 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  57.196902ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:43:19.533 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  78.502131ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:43:19.667 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  76.709209ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:44:58.193 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  62.001638ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:44:58.208 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  82.138309ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:44:58.262 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  24.114163ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:46:04.935 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 143.956132ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:46:04.980 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 254.447941ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:46:05.002 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 286.074802ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:47:11.335 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  58.610914ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:47:11.357 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  90.142642ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:47:11.379 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  27.562796ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:47:46.845 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   48.77449ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:47:47.028 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 322.829972ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:47:47.029 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 317.930731ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:48:05.258 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  73.218487ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:48:05.264 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  71.895954ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:48:05.292 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.100606ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:48:13.477 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  27.609694ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:48:13.542 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 147.160599ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:48:13.544 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 155.016022ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:51:26.961 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   26.96432ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:51:26.962 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 147.091364ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:51:26.979 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 125.176704ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:51:54.704 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  80.672554ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:51:54.740 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  54.361238ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:51:54.984 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 213.036238ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:53:16.013 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  15.469649ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:53:16.020 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 106.060181ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:53:16.024 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 134.004702ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:53:30.784 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 130.199058ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:53:30.827 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 261.443504ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:53:30.863 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 278.199069ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:53:53.158 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 115.140553ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:53:53.167 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  68.959854ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:53:53.181 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 147.659118ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:58:02.888 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  284.40645ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:58:02.932 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 369.549255ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:58:02.963 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 400.460762ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:58:16.532 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  45.468452ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:58:16.558 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  73.365111ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:58:16.604 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  13.204229ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:59:22.212 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.859191ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:59:22.228 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  89.648781ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:59:22.239 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 115.407521ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:59:38.636 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  71.128235ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:59:38.636 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  75.791577ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:59:38.683 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  18.170872ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:59:46.638 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 146.372096ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:59:46.660 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  30.016957ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:59:46.661 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 183.119013ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 10:59:58.544 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  60.521549ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 10:59:58.596 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 184.263432ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 10:59:58.617 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 204.733655ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:00:02.168 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  221.43191ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:00:02.637 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 745.752431ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:00:02.637 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 746.149445ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:00:08.851 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 122.934849ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:00:08.851 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 232.256451ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:00:08.861 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 242.240637ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:00:57.573 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  60.436177ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:00:57.606 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  94.462708ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:00:57.847 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 237.192417ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:01:00.554 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  68.390141ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:01:00.556 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  91.035392ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:01:00.557 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  15.423724ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:01:02.939 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 451.718324ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/12 11:02:41.728 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   59.74625ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:02:41.748 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  82.928932ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:02:41.924 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  177.53404ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/12 11:03:48.300 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  15.633602ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:03:59.906 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  42.973951ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 11:06:37.540 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  14.491888ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 11:06:37.582 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  81.045988ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:06:37.595 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  98.860338ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:06:47.726 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  58.704446ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:06:47.740 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  13.101003ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:06:47.740 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  74.064383ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:06:54.908 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  55.752651ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 11:06:57.752 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  37.713728ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:06:57.752 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  99.589341ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:06:57.763 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  114.16757ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:06:59.715 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 193.697101ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/12 11:07:16.782 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  56.954095ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 11:07:24.895 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  56.267231ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:07:24.923 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  18.318536ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:07:24.925 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  86.129888ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:07:29.526 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 165.663127ms|   match|[97;44m GET     [0m /api/v1/article/get/2   r:/api/v1/article/get/:id
+2019/08/12 11:07:40.455 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  14.999849ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:07:47.331 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   55.75818ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:07:47.347 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  75.821067ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:07:47.378 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  25.172962ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:07:52.319 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  16.995734ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:07:52.340 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  60.318507ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:07:52.355 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   80.35444ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:09:42.537 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  72.524701ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:09:42.541 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  74.047172ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:09:42.611 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.556965ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:09:46.878 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  28.202076ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:09:46.921 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  83.299372ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:09:46.927 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  89.305724ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:09:51.805 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  22.076218ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 11:09:52.878 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  24.479261ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 11:09:54.385 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  48.617632ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 11:09:56.615 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  13.241542ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 11:09:58.502 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 229.720323ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:10:03.963 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  349.56896ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:10:04.036 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 317.715316ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:10:04.338 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 731.530044ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:10:29.474 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  64.181283ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:10:29.552 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 145.136926ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:10:29.660 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  14.231842ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:11:00.743 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  91.697805ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:11:00.794 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 142.643869ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:11:00.795 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  29.316205ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:11:04.480 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  64.451563ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 11:11:17.589 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  15.229868ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:11:28.856 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  58.420427ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:11:28.872 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  77.044646ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:11:28.906 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  14.938157ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:11:46.467 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     46.587µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 11:11:46.842 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 359.578177ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 11:12:17.042 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     36.167µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 11:12:18.241 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 11:12:19.182 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 249.344998ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 11:18:36.410 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 11:19:02.458 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     84.582µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 11:19:02.656 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 187.153183ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 11:20:18.742 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 505.102688ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:20:19.091 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 853.788805ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:20:19.099 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 818.264393ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:21:28.123 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  24.433404ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:21:28.154 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  98.626936ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:21:28.189 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 135.169378ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:21:34.458 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 142.530373ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:21:34.458 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 141.236023ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:21:34.472 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  37.694483ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:21:44.778 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     37.901µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 11:21:46.054 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 1.265994572s|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 11:22:14.513 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   30.32374ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:22:14.526 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  87.538977ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:22:14.561 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 123.450259ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:22:30.563 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 274.016834ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:22:31.440 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 1.220242056s|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:22:31.605 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 1.385638434s|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:23:47.987 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 109.500575ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:23:48.077 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 157.577287ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:23:48.105 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  18.960277ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:24:21.751 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 160.347038ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:24:21.810 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 315.408893ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:24:21.821 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 325.605587ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:27:24.317 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   65.87339ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:27:24.318 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  14.936874ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:27:24.332 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  82.250065ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:27:51.983 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  48.165139ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:27:51.996 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  61.952418ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:27:52.022 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  14.972353ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:28:02.383 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     46.869µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 11:28:02.664 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 268.692149ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 11:29:54.766 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 116.751094ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:29:54.804 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 159.375972ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:29:54.804 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  45.407391ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:30:15.923 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 104.963721ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:30:15.930 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  86.816375ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:30:15.999 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  13.873657ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:31:10.838 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  83.171033ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:31:10.853 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 100.325496ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:31:10.913 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  33.353688ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:31:29.715 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 610.249111ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:31:30.283 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 1.255126063s|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:31:30.520 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  1.50027477s|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:31:38.338 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 3.286042194s|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:31:38.663 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 3.726380482s|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:31:38.673 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 3.735971161s|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:39:12.131 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  84.008926ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:39:12.132 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  47.198976ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:39:12.153 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 106.645869ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:39:18.912 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  95.703105ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:39:18.915 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   19.92834ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:39:18.947 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 129.480821ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:39:20.338 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  61.777436ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:39:20.347 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  70.211943ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:39:20.381 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  16.403183ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:39:32.951 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     47.667µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 11:39:33.614 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 654.980656ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 11:41:27.817 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  57.564615ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:41:27.832 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  73.712622ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:41:27.902 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  57.339775ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:41:44.442 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  18.543344ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:41:44.443 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 120.823891ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:41:44.448 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 132.073783ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:41:55.715 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     48.012µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 11:41:55.897 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  174.33623ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 11:43:22.124 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  35.828029ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 11:43:22.157 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 162.481543ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:43:22.158 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 159.695305ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:43:46.660 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  46.938199ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 11:43:49.921 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  29.895985ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 11:43:49.933 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  83.180422ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:43:49.978 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 129.409115ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:44:02.376 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     43.953µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 11:44:02.627 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 241.379632ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 11:45:23.921 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  23.326655ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 11:45:23.921 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  65.447651ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:45:23.935 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  81.632886ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:45:31.077 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 317.669834ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/12 11:45:51.060 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  65.049709ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 11:45:51.060 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  65.374131ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 11:45:51.266 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 216.269227ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/12 11:48:15.593 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 13:18:08.736 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   81.36594ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:18:08.819 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 174.548632ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:18:09.689 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 744.430807ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/12 13:41:21.631 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  205.94623ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:41:21.649 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 217.761375ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:41:22.191 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 678.756394ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/12 13:41:37.732 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 395.161277ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:41:37.777 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 440.885911ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:41:38.398 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  953.10684ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/12 13:41:51.655 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    109.139µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 13:41:52.134 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 455.228825ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 13:41:53.661 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 264.797632ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:41:53.735 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 338.632291ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:41:53.940 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 478.814282ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/12 13:49:49.537 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  91.428752ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:49:49.537 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  97.578714ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:49:49.895 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 171.307059ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/12 13:50:09.581 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  48.488743ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:50:09.654 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 122.361273ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:50:09.829 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 183.866056ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/12 13:50:21.643 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 265.417588ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:50:21.669 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 290.977413ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:50:21.795 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 294.886079ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/12 13:50:26.440 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  74.251167ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 13:50:32.468 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  94.556898ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:50:32.473 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  27.370955ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 13:50:32.514 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 140.765853ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:50:44.930 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     37.559µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 13:50:45.146 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 207.920322ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 13:50:54.012 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  58.825096ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 13:50:55.872 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.662173ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 13:50:56.718 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.949899ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 13:52:44.514 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 197.913474ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:52:44.514 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 209.500684ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:52:44.516 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  86.055587ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 13:53:03.614 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   76.02271ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:53:03.641 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.547563ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 13:53:03.651 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  115.73244ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:53:15.461 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     78.748µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 13:53:15.688 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 214.275621ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 13:53:40.943 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  68.369749ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:53:40.957 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  83.589252ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:53:41.057 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  30.981788ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 13:57:21.036 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  28.668954ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 13:57:21.108 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 183.319904ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:57:21.127 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 215.410509ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:57:46.828 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 136.862187ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:57:46.850 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 159.464791ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:57:46.878 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  18.635644ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 13:58:58.853 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  37.803071ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 13:58:58.897 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  83.528481ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:58:58.934 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 121.627306ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:59:21.631 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 1.350590814s|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/12 13:59:21.934 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 281.463346ms|   match|[97;44m GET     [0m /api/v1/user/getList/   r:/api/v1/user/getList
+2019/08/12 13:59:28.573 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  65.758393ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 13:59:28.608 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 104.255573ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 13:59:28.785 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 221.039514ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/12 13:59:28.876 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  54.191938ms|   match|[97;44m GET     [0m /api/v1/user/getList/   r:/api/v1/user/getList
+2019/08/12 13:59:48.851 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.737646ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:01:56.662 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  72.279873ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:01:56.678 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  90.169175ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:01:56.721 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  32.584704ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:02:06.097 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 115.668146ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:02:06.110 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  31.049906ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:02:06.128 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 148.429911ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:02:15.537 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     43.272µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:02:15.652 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 103.886771ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:02:30.367 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  42.012785ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:02:30.367 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 136.525882ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:02:30.378 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 148.063788ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:02:37.816 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     57.588µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:02:37.958 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 133.122445ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:02:44.934 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     53.239µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:02:44.971 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  15.733401ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:02:53.649 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    179.166µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:02:53.881 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 215.466895ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:04:27.925 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 14:04:30.313 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|      59.44µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:04:30.572 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 246.080233ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:09:52.027 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 191.262271ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:09:52.183 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 362.474681ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:09:52.326 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  219.45218ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:15:13.052 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  95.325966ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:15:13.186 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  88.956799ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:15:13.249 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 283.812026ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:15:22.159 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  87.933759ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:15:22.172 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 101.192107ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:15:22.229 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  24.481526ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:15:38.399 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 100.851881ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:15:38.405 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 108.557033ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:15:38.414 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  18.182505ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:15:46.685 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 140.823524ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:15:46.701 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 144.849688ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:15:46.722 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  25.351654ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:15:59.015 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     36.748µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:15:59.185 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 163.985866ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:16:56.394 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  14.981618ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:16:56.432 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 118.306366ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:16:56.712 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 399.011783ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:17:04.709 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  68.170597ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:17:04.710 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 125.914385ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:17:04.739 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 155.329746ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:17:14.590 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     43.731µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:17:14.867 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 267.865342ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:17:32.981 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  35.387697ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:17:33.013 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 133.839081ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:17:33.027 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 149.726126ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:17:46.762 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|      61.89µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:17:46.876 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 104.828506ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:19:02.418 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  110.12917ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:19:02.435 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 130.743571ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:19:02.516 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  35.980959ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:19:08.173 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 103.462918ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:19:08.205 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  16.434226ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:19:08.696 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 627.030667ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:19:37.085 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  86.752946ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:19:37.091 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  93.560395ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:19:37.105 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  20.706146ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:19:54.068 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  137.47357ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:19:54.072 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 142.035696ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:19:54.134 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  41.590589ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:21:21.297 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  52.767289ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:21:21.301 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  73.237951ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:21:21.364 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  22.145692ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:21:36.694 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|      44.91µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:21:36.729 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  25.902016ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:21:40.354 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  13.375518ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:21:42.382 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     87.707µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:21:42.402 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  11.217919ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:21:53.596 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     40.878µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:21:53.929 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 319.776948ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:22:49.490 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  65.419611ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:22:49.490 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   66.23078ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:22:49.583 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  15.161497ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:23:24.614 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  53.022013ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:23:24.614 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  61.761269ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:23:24.748 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 101.126948ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:23:49.575 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  49.503157ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:23:49.616 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  94.681172ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:23:49.618 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 102.555835ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:26:04.896 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  64.688031ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:26:04.899 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  67.491601ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:26:05.006 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  21.648106ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:26:14.705 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  39.715172ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:26:45.565 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  174.35883ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:26:46.249 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   912.5616ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:26:46.262 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 926.267125ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:27:06.294 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  64.642706ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:27:06.319 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 139.008811ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:27:06.329 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  157.17865ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:27:10.943 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  34.515752ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:28:01.912 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|      65.69µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:28:02.137 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 211.492061ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:28:19.560 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  64.822528ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:28:19.560 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  65.009819ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:28:19.634 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  40.006002ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:28:59.221 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    118.792µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:28:59.278 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  48.963199ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:29:01.831 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  17.455997ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:30:03.901 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  64.252757ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:30:03.906 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  61.076526ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:30:03.946 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  40.645967ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:30:52.179 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   15.15689ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:30:52.181 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  73.797337ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:30:52.191 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  84.389775ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:32:09.554 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  44.712856ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:32:09.562 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  61.355798ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:32:09.642 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.451252ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:32:19.250 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     50.193µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:32:19.448 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 187.870184ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:32:31.622 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     42.783µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:32:31.852 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 220.392907ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:35:20.526 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.459815ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:35:20.598 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 166.599592ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:35:20.599 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 166.135883ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:35:32.272 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     48.864µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 14:35:32.589 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  303.30738ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 14:44:41.057 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  66.558502ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:44:41.065 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  73.539839ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:44:41.118 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  16.810993ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:44:50.614 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  59.836353ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:44:50.617 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  60.988029ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:44:50.738 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  90.826348ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:45:17.367 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  48.968532ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:45:17.416 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 101.416953ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:45:17.466 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  24.814283ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:45:37.397 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 131.594947ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:45:37.401 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  34.587904ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:45:37.407 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 133.984999ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:47:32.729 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  65.889445ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:47:32.738 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  67.167673ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:47:32.959 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  87.827577ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:49:45.118 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  60.365593ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:49:45.118 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   60.16133ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:49:45.157 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  22.491711ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:51:30.560 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  91.565805ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:51:30.575 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 106.418288ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:51:30.616 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  16.758754ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:52:15.949 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  12.549187ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 14:52:15.958 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 133.127956ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:52:19.039 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 3.195663074s|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:58:47.477 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 175.211851ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 14:58:47.494 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 185.507144ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:59:46.011 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  81.777237ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 14:59:46.033 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 104.327857ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:00:01.631 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 444.668114ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:00:01.655 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 465.631101ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:00:13.448 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 139.032885ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:00:13.460 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 151.064519ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:00:31.752 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  87.296813ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:00:31.768 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 103.575614ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:00:38.914 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  77.704151ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:00:38.936 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 100.839917ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:02:39.580 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 873.906807ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:02:40.182 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 1.472646773s|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:11:54.370 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 302.177714ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:11:54.371 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 302.511674ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:12:10.514 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 119.568353ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:12:10.544 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 157.579015ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:12:23.462 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 147.227355ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:12:23.493 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 180.685862ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:16:53.546 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 165.062334ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:16:53.584 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 203.661833ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:17:49.651 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 174.159462ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:17:49.651 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 171.442137ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:18:04.518 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 664.709252ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:18:04.529 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 674.449459ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:21:18.761 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  60.840763ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:21:18.868 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  169.56689ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:21:24.291 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  11.869099ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 15:21:31.317 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  16.112887ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 15:21:36.647 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  16.046402ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 15:21:46.270 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   96.42242ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:21:46.323 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  149.82221ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:21:49.806 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  12.716176ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 15:21:57.367 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  23.275967ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 15:22:01.616 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  16.242496ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 15:51:31.453 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 175.556517ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:51:31.462 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 182.634568ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:51:38.468 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 416.606215ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 15:51:41.682 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  15.715538ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 15:52:57.741 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 208.329902ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:52:57.746 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  213.23021ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:53:04.271 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  41.597995ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 15:53:13.720 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 107.948979ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 15:53:13.727 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 114.469036ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 15:53:18.715 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  19.867829ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:02:55.529 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  12.114403ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:02:58.594 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  38.282964ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:06:22.008 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 417.561281ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:06:22.066 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 476.435908ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:06:25.468 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 153.596445ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:06:56.211 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 253.043147ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:06:56.274 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  317.74242ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:06:58.422 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 155.747798ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:08:15.260 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 364.598498ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:08:15.402 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 511.270358ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:08:32.617 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 121.326545ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:08:32.620 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 125.107105ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:08:34.674 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  64.943383ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:08:57.495 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  56.592672ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:08:57.519 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  81.654345ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:09:08.203 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 246.693055ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:09:08.234 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 278.034341ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:09:10.078 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 160.238902ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:09:20.156 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  60.507708ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:10:19.372 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  66.036721ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:10:19.377 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  66.500543ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:10:22.734 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  14.985438ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:15:49.138 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  50.135033ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:15:49.155 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  67.414168ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:15:55.347 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  10.542618ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:18:37.029 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 16:18:37.848 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 410.084241ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:19:13.610 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 906.018168ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:19:14.390 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 1.686117957s|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:19:15.528 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  55.761008ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:19:21.663 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 1.048750044s|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:19:41.844 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  83.417576ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:19:41.855 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  95.535159ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:19:48.763 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 125.272508ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:20:08.513 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 269.626955ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:20:08.536 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 294.481102ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:20:11.784 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  28.037967ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:20:43.330 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  62.214213ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:20:43.397 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 130.713223ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:20:56.173 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  82.889761ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:20:56.197 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 107.297167ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:21:05.419 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  15.043934ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:21:16.494 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 260.716862ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:21:16.499 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 265.926604ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:21:19.432 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   15.25393ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:21:49.831 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  52.657104ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:21:49.843 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  66.200967ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:21:55.309 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  46.662076ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:22:39.250 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  50.786736ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:22:39.269 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  69.879001ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:22:42.677 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 508.514237ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:22:44.807 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 341.951117ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:23:11.383 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 164.718079ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:23:11.483 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 257.929144ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:23:14.535 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  47.317379ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:25:03.193 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 205.490699ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:25:03.239 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  247.15439ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:25:07.157 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  14.160417ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:29:52.682 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 428.210102ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:29:52.991 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 736.167166ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:30:32.291 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 363.689399ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:30:32.445 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 507.139328ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:30:39.918 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 100.148885ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:30:39.937 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 119.499972ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:30:43.904 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 147.557174ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:30:50.916 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     70.472µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/registe
+2019/08/12 16:30:50.925 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    158.437µs|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:31:07.877 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  24.815799ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:31:35.416 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 16:31:44.613 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  55.480364ms|   match|[97;44m GET     [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:31:44.685 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     43.486µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/registe
+2019/08/12 16:31:44.703 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     143.17µs|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:32:23.017 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     44.872µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/registe
+2019/08/12 16:32:23.028 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    155.006µs|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:32:24.992 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 16:32:30.513 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     73.194µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/registe
+2019/08/12 16:32:30.526 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    254.292µs|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:33:05.875 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|      48.47µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/registe
+2019/08/12 16:33:05.885 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    176.439µs|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:33:07.642 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 16:33:10.380 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  362.72978ms|   match|[97;46m POST    [0m /api/v1/user/registe   r:/api/v1/user/registe
+2019/08/12 16:33:33.076 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 16:33:38.691 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    127.683µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 16:33:38.990 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 291.278038ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 16:38:14.873 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  191.69826ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:38:14.909 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 227.085519ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:38:53.885 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  144.14636ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:38:54.286 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 544.772663ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:38:54.437 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 662.757321ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:39:16.698 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  86.405572ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:39:16.711 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 100.550193ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:39:16.796 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 120.906648ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:39:55.721 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 249.705819ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:39:55.729 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 252.756293ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:39:55.739 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 193.202671ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:40:34.980 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  91.807246ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:40:35.193 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 304.833832ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:40:35.216 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 200.799477ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:40:49.359 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  79.803763ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:40:49.404 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  106.37622ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:40:49.464 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  94.804855ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:41:37.710 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  52.138449ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:41:37.736 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  78.693718ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:41:38.121 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 397.238104ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:42:40.391 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  79.088927ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:42:40.396 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  84.012793ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:42:40.547 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   134.8452ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:48:33.569 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 411.578045ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:48:33.569 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 363.594435ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:48:33.584 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 426.229384ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:48:55.048 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 156.284596ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:48:55.064 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 175.715077ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:48:55.088 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  163.57022ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:49:22.968 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  49.745945ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:49:23.012 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  93.518763ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:49:23.047 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  85.142214ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:49:42.770 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  72.454792ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:49:42.770 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  73.082288ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:49:42.840 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 102.728597ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:51:18.293 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  57.219586ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:51:18.305 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  69.267913ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:51:18.344 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  59.344837ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:52:33.446 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 114.874921ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:52:33.475 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 144.931627ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:52:33.504 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 128.992457ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:54:28.127 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 102.625248ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:54:28.130 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 139.910904ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:54:28.166 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  90.453017ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:54:51.438 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 141.445389ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:54:51.456 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 125.397002ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:54:51.473 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 177.731481ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:55:14.891 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 111.230912ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 16:55:14.916 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 136.647103ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 16:55:14.917 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  76.509863ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:03:23.530 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  93.453281ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:03:23.536 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  98.971121ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:03:23.675 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 103.870959ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:06:04.374 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  60.436532ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:06:04.385 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  71.188856ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:06:04.501 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  91.657234ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:07:19.180 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  85.973852ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:07:19.186 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  92.443071ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:07:19.261 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  93.713964ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:07:34.248 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  71.365133ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:07:34.263 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  65.028837ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:07:34.602 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 344.779227ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:07:41.407 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 141.101283ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:07:41.414 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 126.311934ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:07:41.420 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 115.312593ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:10:00.022 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 160.657309ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:10:00.078 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 217.885129ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:10:00.088 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 193.553191ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:11:31.967 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:12:42.742 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  87.320068ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:12:42.797 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 143.669016ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:12:42.975 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 266.124842ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:13:51.181 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 117.652413ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:13:51.199 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 135.278273ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:13:51.205 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 115.323635ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:13:59.475 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 142.827921ms|   match|[97;44m GET     [0m /api/v1/sub_category/get/1   r:/api/v1/sub_category/get/:id
+2019/08/12 17:14:04.677 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  26.758108ms|   match|[97;44m GET     [0m /api/v1/sub_category/get/2   r:/api/v1/sub_category/get/:id
+2019/08/12 17:14:10.275 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  15.476885ms|   match|[97;44m GET     [0m /api/v1/sub_category/get/3   r:/api/v1/sub_category/get/:id
+2019/08/12 17:14:13.324 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  17.494346ms|   match|[97;44m GET     [0m /api/v1/sub_category/get/4   r:/api/v1/sub_category/get/:id
+2019/08/12 17:18:26.758 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:18:34.728 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:18:44.301 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  56.804833ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:18:44.325 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  81.632868ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:18:44.536 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 241.974589ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:18:54.246 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    335.522µs| nomatch|[97;44m GET     [0m /api/v1/sub_category/getall/1
+2019/08/12 17:19:02.804 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:19:03.107 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    301.837µs| nomatch|[97;44m GET     [0m /api/v1/sub_category/getall/2
+2019/08/12 17:19:07.658 [D] [server.go:2774]  |      127.0.0.1|[97;43m 404 [0m|    257.143µs| nomatch|[97;44m GET     [0m /api/v1/sub_category/getall/3
+2019/08/12 17:19:49.178 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:19:54.169 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  75.497984ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:19:54.365 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 277.462333ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:19:54.469 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 307.123794ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:19:56.239 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  53.330532ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:19:59.217 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  24.847246ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:20:44.434 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 134.473081ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:20:44.446 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 147.870297ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:20:44.457 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  126.87423ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:20:47.578 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  33.472798ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:28:28.855 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 114.261908ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:28:28.874 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 134.809118ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:28:28.887 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 107.604897ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:28:40.357 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 273.119007ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:28:40.358 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 273.972824ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:28:40.411 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 280.670093ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:29:30.629 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  66.803787ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:29:30.651 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   92.83978ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:29:30.723 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 103.340499ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:29:54.010 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 416.491248ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:29:54.031 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 386.988773ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:29:54.039 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 445.873142ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:30:01.044 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  44.483717ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:30:19.552 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  32.986539ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:34:18.778 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  68.136505ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:34:18.808 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  98.864273ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:34:18.832 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  93.686668ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:36:01.462 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:36:08.175 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  64.882132ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:36:33.166 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  48.719656ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:39:58.695 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:40:10.395 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    129.557µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 17:40:10.579 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  176.64228ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 17:40:15.504 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  54.027346ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:41:06.558 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   50.57118ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:41:06.590 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  85.002841ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:41:06.757 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 185.736411ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:41:31.119 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  46.274684ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:42:10.431 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  59.611867ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:42:44.587 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   95.54119ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:42:44.592 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  99.519304ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:42:44.614 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  92.187267ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:42:48.628 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  50.747715ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:43:03.815 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   64.47414ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:43:03.887 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  56.034146ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:43:24.685 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  90.393551ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:43:24.686 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 111.532434ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:43:24.740 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  73.151013ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:43:30.100 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.617701ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:43:55.450 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  60.338094ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 17:43:55.493 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 141.134151ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:43:55.503 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 150.423034ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:44:00.532 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  94.637344ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:44:04.406 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  44.150121ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:44:15.975 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  97.189374ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:44:16.044 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  55.566119ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:45:13.568 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:45:23.998 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 347.463661ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:45:24.145 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 132.075917ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:46:24.850 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  78.149034ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:46:24.910 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 177.533878ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:46:25.365 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 557.718404ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:46:32.442 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  55.679005ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:46:36.186 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  70.756807ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:46:36.260 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  59.550419ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:47:42.626 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 110.230887ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:47:42.634 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 118.065057ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:47:42.719 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 149.141823ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:50:12.888 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:50:18.833 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  92.191751ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:50:26.635 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  73.182234ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:50:26.778 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 128.857956ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:50:53.078 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:50:53.624 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  52.903862ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:50:53.736 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  93.212855ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:51:35.712 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:51:41.461 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 385.066754ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:51:41.583 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 106.882951ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:51:54.800 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  50.482393ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:51:54.922 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 106.587587ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:52:19.745 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 121.193803ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:52:19.870 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 113.565912ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:53:17.379 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:53:27.612 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  59.968851ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:53:27.696 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 146.201893ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:53:27.770 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  194.61236ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:53:31.165 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  68.352449ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:53:36.970 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 161.604405ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:53:37.048 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  62.018497ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:54:48.557 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 115.955218ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:54:48.573 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 132.371868ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:54:48.752 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 278.804846ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:54:51.838 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  98.866058ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:54:56.229 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  73.244971ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:54:56.293 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  50.025182ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:55:20.637 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  60.025062ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:55:20.646 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  69.725209ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:55:20.681 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  69.596281ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:55:23.674 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  26.052699ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:55:31.972 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  49.377465ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:55:32.382 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 395.367391ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:56:30.628 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  67.498411ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:56:30.628 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  67.139149ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:56:30.788 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 104.162485ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:56:33.474 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  25.642309ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:56:38.582 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  43.320128ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:56:38.951 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 356.244211ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:57:27.397 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  53.903785ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 17:57:27.406 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  61.205483ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:57:27.422 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  78.493378ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 17:57:41.417 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  27.403904ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:57:46.404 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   48.18265ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 17:57:51.123 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 135.330514ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:57:51.644 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 508.063489ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:59:09.881 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:59:16.432 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 321.045322ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:59:16.805 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 356.535138ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 17:59:55.848 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 17:59:59.244 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  67.689808ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 17:59:59.965 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 704.204177ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 18:00:16.445 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   76.92893ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 18:00:18.586 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 2.124772766s|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 18:00:44.808 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 18:03:02.367 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 535.128357ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 18:03:02.399 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 569.205654ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 18:03:02.594 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  724.91849ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 18:03:35.192 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  93.357844ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 18:03:49.081 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  51.623555ms| nomatch|[90;47m OPTIONS [0m /api/v1/article/add
+2019/08/12 18:03:49.890 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 795.568121ms|   match|[97;46m POST    [0m /api/v1/article/add   r:/api/v1/article/add
+2019/08/12 18:03:50.575 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 590.544302ms|   match|[97;44m GET     [0m /api/v1/article/get/19   r:/api/v1/article/get/:id
+2019/08/12 18:05:19.741 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  49.231376ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 18:05:22.924 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   98.78028ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:05:25.987 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  85.474785ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:05:27.011 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|   17.26763ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:05:29.100 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 1.175387502s|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:05:29.843 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 205.317676ms|   match|[97;44m GET     [0m /api/v1/article/get/9   r:/api/v1/article/get/:id
+2019/08/12 18:05:43.110 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     34.376µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 18:05:43.380 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 261.696899ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 18:05:58.860 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     42.665µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 18:05:59.217 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 348.052111ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 18:06:09.236 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    112.458µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 18:06:09.376 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 124.531545ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 18:08:00.039 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 8.806458862s|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 18:08:01.331 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|10.099744597s|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 18:08:07.404 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  81.154173ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 18:08:07.444 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 121.056855ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 18:08:20.604 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     37.286µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 18:08:20.720 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 107.109153ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 18:08:40.133 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  72.443919ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 18:08:40.292 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 237.821044ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 18:09:16.959 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  752.18355ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 18:09:17.163 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 956.768186ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 18:09:29.442 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  97.808005ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 18:09:29.517 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 173.703334ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 18:09:45.463 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     68.862µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 18:09:45.576 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 107.086772ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 18:09:53.399 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|      34.08µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 18:09:53.612 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 200.414701ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 18:10:07.986 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  67.140263ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:10:10.478 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 5.338638263s|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:10:11.642 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 1.163801226s|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:10:20.355 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  18.723376ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:10:21.196 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  20.775436ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:10:21.676 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  20.801546ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:10:22.255 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  19.230244ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 18:10:22.733 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  25.960454ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:10:23.222 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.709561ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:10:23.729 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  17.975263ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:10:25.388 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 588.392341ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:10:26.526 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 1.206294539s|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:11:10.327 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     39.379µs| nomatch|[90;47m OPTIONS [0m /api/v1/message/add
+2019/08/12 18:11:13.236 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 2.904297513s|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/12 18:11:13.327 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   77.63777ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 18:13:54.612 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 200.147786ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 18:13:54.657 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 245.336569ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 18:13:55.260 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 804.877758ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:14:03.262 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     46.567µs| nomatch|[90;47m OPTIONS [0m /api/v1/message/add
+2019/08/12 18:14:03.385 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 117.630502ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/12 18:14:32.199 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 127.732914ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 18:14:32.282 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  209.75097ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 18:14:32.498 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 385.153412ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:14:46.908 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     63.835µs| nomatch|[90;47m OPTIONS [0m /api/v1/message/add
+2019/08/12 18:14:47.421 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 505.242903ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/12 18:15:54.472 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 18:16:12.162 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 150.031673ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 18:16:12.721 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 711.160393ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 18:16:13.111 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 1.030655616s|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:16:20.541 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|      46.85µs| nomatch|[90;47m OPTIONS [0m /api/v1/message/add
+2019/08/12 18:16:20.603 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  53.097301ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/12 18:17:44.910 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 221.869136ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 18:17:45.488 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  779.87363ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 18:17:45.504 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 815.342168ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 18:17:50.754 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     41.971µs| nomatch|[90;47m OPTIONS [0m /api/v1/message/add
+2019/08/12 18:17:51.172 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 406.422955ms|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/12 18:17:51.446 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 260.965073ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 18:18:32.885 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     38.482µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 18:18:33.099 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 202.489355ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 18:18:35.991 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 104.603629ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 18:18:44.133 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     53.478µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 18:18:44.270 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 129.210168ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 18:18:45.892 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 142.246552ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 18:18:57.423 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     55.252µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 18:18:57.675 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 241.957526ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 18:19:07.337 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     72.357µs| nomatch|[90;47m OPTIONS [0m /api/v1/message/add
+2019/08/12 18:19:09.122 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 1.778550801s|   match|[97;46m POST    [0m /api/v1/message/add   r:/api/v1/message/add
+2019/08/12 18:19:09.601 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 466.304665ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 19:57:34.549 [I] [asm_amd64.s:1337]  http server Running on http://:8000
+2019/08/12 19:57:43.261 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 101.478502ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 19:57:43.306 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 147.491194ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 19:57:44.138 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 932.656988ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 19:57:56.373 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 450.932688ms|   match|[97;44m GET     [0m /api/v1/article/get/12   r:/api/v1/article/get/:id
+2019/08/12 19:58:20.053 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   175.0354ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 19:58:24.760 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 326.654047ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 19:58:28.995 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  82.879875ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 19:58:34.693 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  38.675165ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 20:01:04.396 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     49.029µs| nomatch|[90;47m OPTIONS [0m /api/v1/user/login
+2019/08/12 20:01:04.664 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 258.620295ms|   match|[97;46m POST    [0m /api/v1/user/login   r:/api/v1/user/login
+2019/08/12 20:02:11.897 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 321.682874ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 20:02:26.258 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  250.45072ms|   match|[97;44m GET     [0m /api/v1/article/get/4   r:/api/v1/article/get/:id
+2019/08/12 20:02:33.425 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  89.231659ms|   match|[97;44m GET     [0m /api/v1/message/get   r:/api/v1/message/get
+2019/08/12 20:02:33.448 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 112.769216ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 20:02:33.466 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  84.054696ms|   match|[97;44m GET     [0m /api/v1/article/get/400   r:/api/v1/article/get/:id
+2019/08/12 20:02:45.083 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  22.870735ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 20:02:47.950 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  71.780078ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 20:02:49.182 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  21.605951ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 20:02:50.287 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  20.924679ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 20:02:52.358 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 711.202704ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 20:03:07.633 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  25.730189ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 20:03:10.771 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  28.209062ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 20:03:12.518 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  26.955072ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 20:03:14.905 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  34.203451ms|   match|[97;44m GET     [0m /api/v1/article/getall/   r:/api/v1/article/getall
+2019/08/12 20:03:16.794 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m|  32.908624ms|   match|[97;44m GET     [0m /api/v1/article/getall   r:/api/v1/article/getall
+2019/08/12 20:03:18.623 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 226.968189ms|   match|[97;44m GET     [0m /api/v1/article/get/1   r:/api/v1/article/get/:id
+2019/08/12 20:03:18.755 [D] [server.go:2774]  |            ::1|[97;42m 200 [0m| 116.962468ms|   match|[97;44m GET     [0m /api/v1/user/getList/   r:/api/v1/user/getList
+2019/08/12 20:04:02.273 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m| 112.396261ms|   match|[97;44m GET     [0m /api/v1/category/getall   r:/api/v1/category/getall
+2019/08/12 20:04:15.324 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  45.200987ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 20:04:18.115 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  42.995646ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 20:04:22.203 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  44.770221ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
+2019/08/12 20:04:27.217 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  45.678951ms|   match|[97;44m GET     [0m /api/v1/sub_category/getall   r:/api/v1/sub_category/getall
