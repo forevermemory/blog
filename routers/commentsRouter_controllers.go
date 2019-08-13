@@ -54,6 +54,15 @@ func init() {
 
     beego.GlobalControllerRouter["bee/blog/controllers:ArticleController"] = append(beego.GlobalControllerRouter["bee/blog/controllers:ArticleController"],
         beego.ControllerComments{
+            Method: "GetTotalCount",
+            Router: `/getcount`,
+            AllowHTTPMethods: []string{"get"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["bee/blog/controllers:ArticleController"] = append(beego.GlobalControllerRouter["bee/blog/controllers:ArticleController"],
+        beego.ControllerComments{
             Method: "AcceptImage",
             Router: `/image`,
             AllowHTTPMethods: []string{"post"},
@@ -146,6 +155,15 @@ func init() {
         beego.ControllerComments{
             Method: "GetMessage",
             Router: `/get`,
+            AllowHTTPMethods: []string{"get"},
+            MethodParams: param.Make(),
+            Filters: nil,
+            Params: nil})
+
+    beego.GlobalControllerRouter["bee/blog/controllers:MessageController"] = append(beego.GlobalControllerRouter["bee/blog/controllers:MessageController"],
+        beego.ControllerComments{
+            Method: "GetMessageCount",
+            Router: `/getcount`,
             AllowHTTPMethods: []string{"get"},
             MethodParams: param.Make(),
             Filters: nil,

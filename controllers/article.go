@@ -151,7 +151,7 @@ func (this *ArticleController) Add() {
 	}
 
 	// 初始化view 和 zan 数量
-	if _, doErr := conn.Do("hmset", "article_"+strconv.Itoa(article.Id), "view", "1", "zan", "0"); doErr != nil {
+	if _, doErr := conn.Do("hset", "articles", "article_"+strconv.Itoa(article.Id), "1"); doErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "8", "msg": doErr.Error()}
 		this.ServeJSON()
 		return
@@ -227,14 +227,14 @@ func (this *ArticleController) Get() {
 	// 	return
 	// }
 
-	// 设置 view 自增 1
-	if _, incrbyErr := conn.Do("hincrby", "article_"+id, "view", 1); incrbyErr != nil {
+	// 设置 view 自增 1    	HINCRBY key field increment
+	if _, incrbyErr := conn.Do("hincrby", "articles", "article_"+id, 1); incrbyErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "7", "msg": incrbyErr.Error()}
 		this.ServeJSON()
 		return
 	}
 	// 获取 view 的最新值
-	view, viewErr := redis.Int(conn.Do("hget", "article_"+id, "view"))
+	view, viewErr := redis.Int(conn.Do("hget", "articles", "article_"+id))
 	if viewErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "8", "msg": viewErr.Error()}
 		this.ServeJSON()
@@ -371,13 +371,16 @@ func (this *ArticleController) GetList() {
 // @Success 200 {object} models.Article
 // @router /delete/:id [get]
 func (this *ArticleController) DeleteById() {
-	conn, cacheError := utils.GetRedisConn()
+	pool := utils.GetDefaultRedisPool()
 
-	if cacheError != nil {
-		this.Data["json"] = map[string]interface{}{"code": "1", "msg": cacheError.Error()}
-		this.ServeJSON()
-		return
-	}
+	conn := pool.Get()
+	defer conn.Close()
+
+	// if cacheError != nil {
+	// 	this.Data["json"] = map[string]interface{}{"code": "1", "msg": cacheError.Error()}
+	// 	this.ServeJSON()
+	// 	return
+	// }
 
 	o := orm.NewOrm()
 	//接收参数 验证参数合法性
@@ -403,13 +406,13 @@ func (this *ArticleController) DeleteById() {
 	}
 
 	// 删除redis中的key
-	if deleteErr := conn.Delete("article_" + id); deleteErr != nil {
+	if _, deleteErr := conn.Do("hdel", "articles", "article_"+id); deleteErr != nil {
 		this.Data["json"] = map[string]interface{}{"code": "4", "msg": deleteErr.Error()}
 		this.ServeJSON()
 		return
 	}
 
-	this.Data["json"] = map[string]interface{}{"code": "4", "msg": "ok"}
+	this.Data["json"] = map[string]interface{}{"code": "5", "msg": "ok"}
 	this.ServeJSON()
 	return
 }
@@ -474,6 +477,25 @@ func (this *ArticleController) Edit() {
 	this.Data["json"] = &article
 	this.ServeJSON()
 	return
+}
+
+// @Title  获取文章总数量
+// @Description 获取文章总数量
+// @Success 200 {object} models.Article
+// @router /getcount [get]
+func (this *ArticleController) GetTotalCount() {
+
+	o := orm.NewOrm()
+	count, err := o.QueryTable("article").Count()
+	if err != nil {
+		this.Data["json"] = map[string]interface{}{"code": "4", "msg": err.Error()}
+		this.ServeJSON()
+		return
+	}
+	this.Data["json"] = map[string]interface{}{"len": count}
+	this.ServeJSON()
+	return
+
 }
 
 // @Title  接受副文本编辑器的图像

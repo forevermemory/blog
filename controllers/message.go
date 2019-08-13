@@ -135,6 +135,25 @@ func (this *MessageController) GetMessage() {
 
 }
 
+// @Title  查询总的留言条数
+// @Description 查询总的留言条数
+// @Success 200 {strings} "ok"
+// @router /getcount [get]
+func (this *MessageController) GetMessageCount() {
+
+	pool := utils.GetDefaultRedisPool()
+	conn := pool.Get()
+
+	defer conn.Close()
+
+	v1, _ := redis.Int(conn.Do("llen", "message"))
+
+	this.Data["json"] = map[string]interface{}{"len": v1}
+	this.ServeJSON()
+	return
+
+}
+
 // @Title  管理员删除一条记录
 // @Description 管理员删除一条记录
 // @Param	content	query string	true	"需要删除的item"

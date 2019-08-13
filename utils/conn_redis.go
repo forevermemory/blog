@@ -63,6 +63,8 @@ var GetRequestTokenFilter = func(ctx *context.Context) {
 		log.Println("token is not exist......")
 
 		ctx.WriteString("token is invalid")
+		return
+
 		// ctx.Output.JSON(`{"code":"0","msg":"token is null"}`, false, false)
 	}
 	log.Println("is running......")

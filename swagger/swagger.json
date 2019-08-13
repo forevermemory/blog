@@ -24,42 +24,62 @@
                 "operationId": "ArticleController.新增文章",
                 "parameters": [
                     {
-                        "in": "formDate",
-                        "name": "user_id",
+                        "in": "body",
+                        "name": "userId",
                         "description": "当前用户id",
                         "required": true,
-                        "type": "integer",
-                        "format": "int64"
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
                     },
                     {
-                        "in": "formDate",
+                        "in": "body",
                         "name": "title",
                         "description": "文章title",
                         "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
                         "type": "string"
                     },
                     {
-                        "in": "formDate",
+                        "in": "body",
                         "name": "content",
                         "description": "文章内容",
                         "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
                         "type": "string"
                     },
                     {
-                        "in": "formDate",
+                        "in": "body",
                         "name": "category",
                         "description": "一级分类",
                         "required": true,
-                        "type": "integer",
-                        "format": "int64"
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
                     },
                     {
-                        "in": "formDate",
-                        "name": "sub_category",
+                        "in": "body",
+                        "name": "subCategory",
                         "description": "二级分类",
                         "required": true,
-                        "type": "integer",
-                        "format": "int64"
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "tag",
+                        "description": "标签们 tag='1,2,3', 1 2 3分别为标签的id",
+                        "schema": {
+                            "$ref": "#/definitions/str"
+                        }
                     }
                 ],
                 "responses": {
@@ -196,14 +216,57 @@
                     },
                     {
                         "in": "query",
-                        "name": "categoryId",
+                        "name": "categoryName",
                         "description": "分类",
                         "type": "string"
                     },
                     {
                         "in": "query",
-                        "name": "subCategoryId",
+                        "name": "subCategoryName",
                         "description": "二级分类",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Article"
+                        }
+                    }
+                }
+            }
+        },
+        "/article/getcount": {
+            "get": {
+                "tags": [
+                    "article"
+                ],
+                "description": "获取文章总数量",
+                "operationId": "ArticleController.获取文章总数量",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Article"
+                        }
+                    }
+                }
+            }
+        },
+        "/article/image": {
+            "post": {
+                "tags": [
+                    "article"
+                ],
+                "description": "接受副文本编辑器的图像",
+                "operationId": "ArticleController.接受副文本编辑器的图像",
+                "parameters": [
+                    {
+                        "in": "formDate",
+                        "name": "content",
+                        "description": "文章内容",
+                        "required": true,
                         "type": "string"
                     }
                 ],
@@ -228,6 +291,13 @@
                     {
                         "in": "formDate",
                         "name": "name",
+                        "description": "新增分类名称",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "url",
                         "description": "新增分类名称",
                         "required": true,
                         "type": "string"
@@ -346,6 +416,13 @@
                         "description": "新的分类名称",
                         "required": true,
                         "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "url",
+                        "description": "新的分类名称",
+                        "required": true,
+                        "type": "string"
                     }
                 ],
                 "responses": {
@@ -370,23 +447,58 @@
                 "operationId": "CommentController.添加评论",
                 "parameters": [
                     {
-                        "in": "formDate",
+                        "in": "body",
                         "name": "articleId",
                         "description": "文章id",
                         "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
                         "type": "string"
                     },
                     {
-                        "in": "formDate",
+                        "in": "body",
                         "name": "userId",
                         "description": "评论人id",
                         "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
                         "type": "string"
                     },
                     {
-                        "in": "formDate",
+                        "in": "body",
                         "name": "content",
                         "description": "评论内容",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Category"
+                        }
+                    }
+                }
+            }
+        },
+        "/comment/delete/{id}": {
+            "get": {
+                "tags": [
+                    "comment"
+                ],
+                "description": "删除评论",
+                "operationId": "CommentController.删除评论",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "commentId",
+                        "description": "评论id",
                         "required": true,
                         "type": "string"
                     }
@@ -410,10 +522,22 @@
                 "operationId": "MessageController.留言板添加信息",
                 "parameters": [
                     {
-                        "in": "formDate",
+                        "in": "body",
                         "name": "content",
                         "description": "留言板添加信息",
                         "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "userId",
+                        "description": "留言板添加信息",
+                        "schema": {
+                            "type": "string"
+                        },
                         "type": "string"
                     }
                 ],
@@ -469,6 +593,20 @@
                 }
             }
         },
+        "/message/getcount": {
+            "get": {
+                "tags": [
+                    "message"
+                ],
+                "description": "查询总的留言条数",
+                "operationId": "MessageController.查询总的留言条数",
+                "responses": {
+                    "200": {
+                        "description": "{strings} \"ok\""
+                    }
+                }
+            }
+        },
         "/sub_category/add": {
             "post": {
                 "tags": [
@@ -488,6 +626,13 @@
                     {
                         "in": "formDate",
                         "name": "name",
+                        "description": "新增分类名称",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "url",
                         "description": "新增分类名称",
                         "required": true,
                         "type": "string"
@@ -546,7 +691,7 @@
                     {
                         "in": "path",
                         "name": "id",
-                        "description": "二级分类的id",
+                        "description": "1级分类的id",
                         "required": true,
                         "type": "string"
                     }
@@ -571,6 +716,15 @@
                 ],
                 "description": "查询所有二级分类",
                 "operationId": "SubCategoryController.查询所有二级分类",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "id",
+                        "description": "1级分类的id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "",
@@ -595,7 +749,7 @@
                     {
                         "in": "formDate",
                         "name": "id",
-                        "description": "分类的id",
+                        "description": "一级分类的id",
                         "required": true,
                         "type": "integer",
                         "format": "int64"
@@ -614,6 +768,13 @@
                         "description": "新二级分类名称",
                         "required": true,
                         "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "url",
+                        "description": "新二级分类名称url",
+                        "required": true,
+                        "type": "string"
                     }
                 ],
                 "responses": {
@@ -621,6 +782,158 @@
                         "description": "",
                         "schema": {
                             "$ref": "#/definitions/models.SubCategory"
+                        }
+                    },
+                    "400": {
+                        "description": "register failed"
+                    }
+                }
+            }
+        },
+        "/sub_comment/add": {
+            "post": {
+                "tags": [
+                    "sub_comment"
+                ],
+                "description": "添加评论",
+                "operationId": "SubCommentController.添加评论",
+                "parameters": [
+                    {
+                        "in": "formDate",
+                        "name": "commentId",
+                        "description": "一级评论id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "userId",
+                        "description": "评论人id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "articleId",
+                        "description": "文章id",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "content",
+                        "description": "评论内容",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Category"
+                        }
+                    }
+                }
+            }
+        },
+        "/sub_comment/delete/{id}": {
+            "get": {
+                "tags": [
+                    "sub_comment"
+                ],
+                "description": "删除二级评论",
+                "operationId": "SubCommentController.删除二级评论",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "subCommentId",
+                        "description": "二级评论id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Category"
+                        }
+                    }
+                }
+            }
+        },
+        "/tag/add": {
+            "post": {
+                "tags": [
+                    "tag"
+                ],
+                "description": "新增一个标签",
+                "operationId": "TagController.新增一个标签",
+                "parameters": [
+                    {
+                        "in": "formDate",
+                        "name": "name",
+                        "description": "标签名称",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Tag"
+                        }
+                    },
+                    "400": {
+                        "description": "register failed"
+                    }
+                }
+            }
+        },
+        "/tag/getArticle": {
+            "get": {
+                "tags": [
+                    "tag"
+                ],
+                "description": "根据标签查询出来对应类型的文章",
+                "operationId": "TagController.根据标签查询出来对应类型的文章",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "id",
+                        "description": "标签id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.article"
+                        }
+                    },
+                    "400": {
+                        "description": "register failed"
+                    }
+                }
+            }
+        },
+        "/tag/getall": {
+            "get": {
+                "tags": [
+                    "tag"
+                ],
+                "description": "查询所有标签",
+                "operationId": "TagController.查询所有标签",
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Tag"
                         }
                     },
                     "400": {
@@ -649,25 +962,18 @@
                 }
             }
         },
-        "/user/login": {
-            "post": {
+        "/user/getList": {
+            "get": {
                 "tags": [
                     "user"
                 ],
-                "description": "登录",
-                "operationId": "UserController.登录",
+                "description": "用户列表 1,2,3",
+                "operationId": "UserController.用户列表2",
                 "parameters": [
                     {
-                        "in": "formDate",
-                        "name": "username",
-                        "description": "用户名",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "in": "formDate",
-                        "name": "password",
-                        "description": "密码",
+                        "in": "query",
+                        "name": "ids",
+                        "description": "1,2",
                         "required": true,
                         "type": "string"
                     }
@@ -680,7 +986,242 @@
                         }
                     },
                     "400": {
+                        "description": "register failed"
+                    }
+                }
+            }
+        },
+        "/user/login": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "登录",
+                "operationId": "UserController.登录",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "username",
+                        "description": "用户名",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "password",
+                        "description": "密码",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "400": {
                         "description": "login failed"
+                    }
+                }
+            }
+        },
+        "/user/profile/add": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "完善用户信息",
+                "operationId": "ProfileController.完善用户信息",
+                "parameters": [
+                    {
+                        "in": "formDate",
+                        "name": "userId",
+                        "description": "用户id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "gender",
+                        "description": "性别",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "age",
+                        "description": "年龄",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "address",
+                        "description": "地址",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "telephone",
+                        "description": "手机",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "avator",
+                        "description": "头像的路径",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "personality",
+                        "description": "个人简介",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{strings} \"ok\""
+                    }
+                }
+            }
+        },
+        "/user/profile/get/{userId}": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "description": "查询一个",
+                "operationId": "ProfileController.查询一个",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "userId",
+                        "description": "用户id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Profile"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/profile/update": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "更新用户profile信息",
+                "operationId": "ProfileController.更新用户profile信息",
+                "parameters": [
+                    {
+                        "in": "formDate",
+                        "name": "profileId",
+                        "description": "用户 的 profileId",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "gender",
+                        "description": "性别",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "age",
+                        "description": "年龄",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "address",
+                        "description": "地址",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "telephone",
+                        "description": "手机",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "personality",
+                        "description": "个人简介",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{strings} \"ok\""
+                    }
+                }
+            }
+        },
+        "/user/profile/update/avator": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "description": "更新用户头像",
+                "operationId": "ProfileController.更新用户头像",
+                "parameters": [
+                    {
+                        "in": "formDate",
+                        "name": "profileId",
+                        "description": "用户 的 profileId",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "userId",
+                        "description": "用户 的 userId",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "in": "formDate",
+                        "name": "avator",
+                        "description": "头像",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{strings} \"ok\""
                     }
                 }
             }
@@ -721,24 +1262,33 @@
                 "operationId": "UserController.注册",
                 "parameters": [
                     {
-                        "in": "formDate",
+                        "in": "body",
                         "name": "username",
                         "description": "用户名",
                         "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
                         "type": "string"
                     },
                     {
-                        "in": "formDate",
+                        "in": "body",
                         "name": "password",
                         "description": "密码",
                         "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
                         "type": "string"
                     },
                     {
-                        "in": "formDate",
+                        "in": "body",
                         "name": "email",
                         "description": "邮箱",
                         "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
                         "type": "string"
                     }
                 ],
@@ -764,35 +1314,25 @@
                 "operationId": "UserController.更新密码",
                 "parameters": [
                     {
-                        "in": "body",
+                        "in": "formData",
                         "name": "id",
                         "description": "username",
                         "required": true,
-                        "schema": {
-                            "format": "int64",
-                            "type": "integer"
-                        },
                         "type": "integer",
                         "format": "int64"
                     },
                     {
-                        "in": "body",
+                        "in": "formData",
                         "name": "password1",
                         "description": "原密码",
                         "required": true,
-                        "schema": {
-                            "type": "string"
-                        },
                         "type": "string"
                     },
                     {
-                        "in": "body",
+                        "in": "formData",
                         "name": "password2",
                         "description": "新密码",
                         "required": true,
-                        "schema": {
-                            "type": "string"
-                        },
                         "type": "string"
                     }
                 ],
@@ -840,6 +1380,10 @@
                 },
                 "Image": {
                     "type": "string"
+                },
+                "Pinglun": {
+                    "type": "integer",
+                    "format": "int64"
                 },
                 "State": {
                     "description": "这是状态字段 0 已发表    1 已删除",
@@ -901,6 +1445,9 @@
                     "items": {
                         "$ref": "#/definitions/models.SubCategory"
                     }
+                },
+                "Url": {
+                    "type": "string"
                 }
             }
         },
@@ -929,12 +1476,32 @@
                     }
                 },
                 "User": {
-                    "type": "integer",
-                    "format": "int64"
+                    "$ref": "#/definitions/models.User"
                 },
                 "Zan": {
                     "type": "integer",
                     "format": "int64"
+                }
+            }
+        },
+        "models.Message": {
+            "title": "Message",
+            "type": "object",
+            "properties": {
+                "Content": {
+                    "description": "xss  cross-site scriptong 跨站脚本漏洞",
+                    "type": "string"
+                },
+                "Date": {
+                    "type": "string",
+                    "format": "datetime"
+                },
+                "Id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "User": {
+                    "$ref": "#/definitions/models.User"
                 }
             }
         },
@@ -953,7 +1520,8 @@
                     "type": "string"
                 },
                 "Gender": {
-                    "type": "string"
+                    "type": "integer",
+                    "format": "int64"
                 },
                 "Id": {
                     "type": "integer",
@@ -989,6 +1557,9 @@
                 },
                 "Name": {
                     "type": "string"
+                },
+                "Url": {
+                    "type": "string"
                 }
             }
         },
@@ -1002,28 +1573,23 @@
                 "Comment": {
                     "$ref": "#/definitions/models.Comment"
                 },
+                "Content": {
+                    "type": "string"
+                },
                 "Date": {
                     "type": "string",
                     "format": "datetime"
-                },
-                "FromUser": {
-                    "type": "integer",
-                    "format": "int64"
                 },
                 "Id": {
                     "type": "integer",
                     "format": "int64"
                 },
-                "ToUser": {
-                    "type": "integer",
-                    "format": "int64"
+                "User": {
+                    "$ref": "#/definitions/models.User"
                 },
                 "Zan": {
                     "type": "integer",
                     "format": "int64"
-                },
-                "content": {
-                    "type": "string"
                 }
             }
         },
@@ -1056,6 +1622,12 @@
                         "$ref": "#/definitions/models.Article"
                     }
                 },
+                "Comment": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.Comment"
+                    }
+                },
                 "CryptPassword": {
                     "type": "string"
                 },
@@ -1070,11 +1642,23 @@
                     "type": "integer",
                     "format": "int64"
                 },
+                "Message": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.Message"
+                    }
+                },
                 "Password": {
                     "type": "string"
                 },
                 "Profile": {
                     "$ref": "#/definitions/models.Profile"
+                },
+                "SubComment": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.SubComment"
+                    }
                 },
                 "Superuser": {
                     "type": "integer",
@@ -1087,6 +1671,14 @@
                     "type": "string"
                 }
             }
+        },
+        "models.article": {
+            "title": "article",
+            "type": "object"
+        },
+        "str": {
+            "title": "str",
+            "type": "object"
         }
     },
     "tags": [
@@ -1095,12 +1687,16 @@
             "description": "Operations about Category\n"
         },
         {
+            "name": "tag",
+            "description": "Operations about SubCategory\n"
+        },
+        {
             "name": "sub_category",
             "description": "Operations about SubCategory\n"
         },
         {
             "name": "user",
-            "description": "Operations about Users\n"
+            "description": "Operations about profile\n"
         },
         {
             "name": "article",

@@ -3,6 +3,7 @@ package controllers
 import (
 	"bee/blog/models"
 	"bee/blog/utils"
+	"encoding/json"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"strconv"
@@ -12,6 +13,90 @@ type CommentController struct {
 	beego.Controller
 }
 
+type addComment struct {
+	ArticleId string
+	UserId    string
+	Content   string
+}
+
+// @Title  添加评论
+// @Description 添加评论
+// @Param	articleId body string true "文章id"
+// @Param	userId body string	true "评论人id"
+// @Param	content	body string	true	"评论内容"
+// @Success 200 {object} models.Category
+// @router /add [post]
+func (this *CommentController) Add() {
+
+	var a addComment
+	if errParseForm := json.Unmarshal(this.Ctx.Input.RequestBody, &a); errParseForm != nil {
+		this.Data["json"] = map[string]interface{}{"code": "0", "msg": errParseForm.Error()}
+		this.ServeJSON()
+		return
+	}
+
+	//接受参数
+	content := a.Content
+	if !(utils.TrimString(content) > 0) {
+		this.Data["json"] = map[string]interface{}{"code": "1", "msg": "content is null"}
+		this.ServeJSON()
+		return
+	}
+
+	userId, getInterr := strconv.Atoi(a.UserId)
+	if getInterr != nil {
+		this.Data["json"] = map[string]interface{}{"code": "2", "msg": getInterr.Error()}
+		this.ServeJSON()
+		return
+	}
+
+	articleId, articleIdErr := strconv.Atoi(a.ArticleId)
+	if articleIdErr != nil {
+		this.Data["json"] = map[string]interface{}{"code": "3", "msg": articleIdErr.Error()}
+		this.ServeJSON()
+		return
+	}
+
+	o := orm.NewOrm()
+	// 查出数据
+
+	user := models.User{
+		Id: userId,
+	}
+	if readUserErr := o.Read(&user); readUserErr != nil {
+		this.Data["json"] = map[string]interface{}{"code": "5", "msg": readUserErr.Error()}
+		this.ServeJSON()
+		return
+	}
+
+	article := models.Article{
+		Id: articleId,
+	}
+	if readErr2 := o.Read(&article); readErr2 != nil {
+		this.Data["json"] = map[string]interface{}{"code": "4", "msg": readErr2.Error()}
+		this.ServeJSON()
+		return
+	}
+
+	comment := models.Comment{
+		Content: content,
+		User:    &user,
+		Article: &article,
+	}
+	_, insertErr := o.Insert(&comment)
+	if insertErr != nil {
+		this.Data["json"] = map[string]interface{}{"code": "6", "msg": insertErr.Error()}
+		this.ServeJSON()
+		return
+	}
+
+	this.Data["json"] = &comment
+	this.ServeJSON()
+	return
+
+}
+
+/*
 // @Title  添加评论
 // @Description 添加评论
 // @Param	articleId formDate string true "文章id"
@@ -81,6 +166,7 @@ func (this *CommentController) Add() {
 	return
 
 }
+*/
 
 // @Title  删除评论
 // @Description 删除评论
